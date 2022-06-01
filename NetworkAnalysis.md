@@ -178,7 +178,7 @@ legend("topright",
        border = NA)
 ```
 
-![](NetworkAnalysis_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-5-1.png)<!-- -->
 
 The size of a node reflects the overall strength of connections to that
 node.
