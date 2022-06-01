@@ -1,0 +1,23 @@
+Item,ItemText,Factor
+Q6.1,Am always prepared.,Conscientiousness
+Q6.2,Pay attention to details.,Conscientiousness
+Q6.3,Carry out my plans.,Conscientiousness
+Q6.4,Make plans and stick to them.,Conscientiousness
+Q6.8,Feel comfortable around people.,Extraversion
+Q6.9,Make friends easily.,Extraversion
+Q6.10,Am skilled in handling social situations.,Extraversion
+Q6.11,Am the life of the party.,Extraversion
+Q6.12,Know how to captivate people.,Extraversion
+Q6.18,Often feel blue.,Neuroticism
+Q6.19,Dislike myself.,Neuroticism
+Q6.20,Am often down in the dumps.,Neuroticism
+Q6.21,Have frequent mood swings.,Neuroticism
+Q6.22,Panic easily.,Neuroticism
+Q6.28,Have a good word for everyone.,Agreeableness
+Q6.29,Believe that others have good intentions.,Agreeableness
+Q6.30,Respect others.,Agreeableness
+Q6.31,Accept people as they are.,Agreeableness
+Q6.32,Make people feel at ease.,Agreeableness
+Q6.38,Have a vivid imagination.,Openness
+Q6.39,Carry the conversation to a higher level.,Openness
+Q6.40,Enjoy hearing new ideas.,Openness
