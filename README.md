@@ -6,11 +6,7 @@ output: rmarkdown::github_document
 fig_width: 20
 fig_height: 16 
 ---
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  fig.path = "README_figs/README-"
-)
-```
+
 
 ```{r Libraries and Data, include=FALSE}
 library(car)
