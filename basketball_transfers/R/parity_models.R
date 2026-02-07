@@ -33,13 +33,16 @@ source("R/program_classification.R")
 # Post-portal: 2021-2024 (one-time transfer + NIL both effective)
 
 define_policy_periods <- function(panel, season_col = "season") {
-  panel$pre_portal  <- as.integer(panel[[season_col]] <= 2019)
-  panel$post_portal <- as.integer(panel[[season_col]] >= 2021)
-  panel$transition  <- as.integer(panel[[season_col]] == 2020)
-  panel$covid_year  <- as.integer(panel[[season_col]] == 2020)
+  s <- panel[[season_col]]
+  # Handle case where season_col doesn't exist but year does
+  if (is.null(s) && "year" %in% names(panel)) s <- panel$year
+  if (is.null(s)) stop("Cannot find season/year column")
 
-  # Continuous treatment intensity: years since policy change
-  panel$years_post <- pmax(0, panel[[season_col]] - 2020)
+  panel$pre_portal  <- as.integer(s <= 2019)
+  panel$post_portal <- as.integer(s >= 2021)
+  panel$transition  <- as.integer(s == 2020)
+  panel$covid_year  <- as.integer(s == 2020)
+  panel$years_post  <- pmax(0, s - 2020)
 
   panel
 }
@@ -88,9 +91,16 @@ model_aggregate_parity <- function(parity_panel) {
 # MODEL 2: Team-level DiD with heterogeneous treatment by program tier
 # ══════════════════════════════════════════════════════════════════════════════
 
-model_team_did <- function(panel) {
-  d <- panel[panel$season != 2020, ]  # Exclude COVID
-  d <- define_policy_periods(d)
+model_team_did <- function(panel, wins_col = "w", season_col = "year",
+                           team_col = "team") {
+  # Standardize column names for model use
+  d <- panel
+  d$wins_  <- d[[wins_col]]
+  d$season_ <- d[[season_col]]
+  d$team_  <- d[[team_col]]
+
+  d <- d[d$season_ != 2020, ]  # Exclude COVID
+  d <- define_policy_periods(d, season_col = season_col)
 
   cat("\n=== MODEL 2: Team-Level DiD with Program Tier Interactions ===\n\n")
 
@@ -101,13 +111,8 @@ model_team_did <- function(panel) {
   d$post_mm  <- d$post_portal * as.integer(d$program_tier == "Mid-Major")
 
   # Win percentage model with team + season FE
-  # Reference group: Blue Bloods pre-portal
-  # beta_post_bb: change in BB wins post-portal
-  # beta_post_hm: change in HM wins post-portal
-  # If parity increases: beta_post_bb < 0 (BBs decline)
-  #                  or: beta_post_hm > beta_post_bb (HMs gain more)
-  mod_wins <- lm(wins ~ post_bb + post_nbb + post_hm + post_mm +
-                   factor(team) + factor(season),
+  mod_wins <- lm(wins_ ~ post_bb + post_nbb + post_hm + post_mm +
+                   factor(team_) + factor(season_),
                  data = d)
 
   # Extract key coefficients
@@ -143,9 +148,9 @@ model_team_did <- function(panel) {
   }
 
   # Efficiency model
-  if ("adj_efficiency" %in% names(d)) {
-    mod_eff <- lm(adj_efficiency ~ post_bb + post_nbb + post_hm + post_mm +
-                    factor(team) + factor(season),
+  if ("adj_margin" %in% names(d)) {
+    mod_eff <- lm(adj_margin ~ post_bb + post_nbb + post_hm + post_mm +
+                    factor(team_) + factor(season_),
                   data = d)
   } else {
     mod_eff <- NULL
