@@ -1,120 +1,115 @@
-# KU Basketball 3-Point Attempt Rate vs Top 50 KenPom Offenses
-# Analysis of Kansas Jayhawks' 3PA rate defense against elite offenses
+# KU Basketball: 3P% and Offensive Efficiency Among Top 50 KenPom Teams
+# 2024-25 Season
 #
-# Research Question: How does KU's defensive 3-point attempt rate allowed
-# differ when facing top 50 KenPom offensive teams?
+# Questions:
+#   1. What is the general relationship between team 3P% and offensive efficiency?
+#   2. How does KU's 3P% compare to other top 50 KenPom offensive teams?
 #
-# Metric: 3PAr = 3-Point Attempt Rate = 3PA / FGA
-# KenPom Offensive Rating used to classify opponent quality
+# Source: KenPom / Sports Reference 2024-25 end-of-season data
 
 library(tidyverse)
 library(ggplot2)
 library(scales)
 
 # ============================================================
-# DATA
+# DATA: Top 50 KenPom Offensive Teams, 2024-25
+# kenpom_rank  = KenPom offensive efficiency rank
+# adj_o        = Adjusted Offensive Efficiency (points per 100 possessions, adj. for schedule)
+# three_pct    = Team 3-point field goal percentage
+# three_par    = 3-point attempt rate (3PA / FGA) — shot selection
 # ============================================================
-# KU 2024-25 game-by-game opponent shooting data
-# Source: Sports Reference / KenPom
-# Columns: opponent, kenpom_off_rank, opp_3pa, opp_fga, opp_3pm, ku_result
 
-ku_games <- tribble(
-  ~opponent,               ~kenpom_off_rank, ~opp_3pa, ~opp_fga, ~opp_3pm, ~ku_result,
-  # Non-conference
-  "UMKC",                          358,          8,       52,       3,      "W",
-  "Illinois State",                175,         12,       56,       4,      "W",
-  "Kentucky",                       18,         22,       64,       7,      "W",
-  "SIU Edwardsville",              310,          9,       48,       2,      "W",
-  "Indiana",                        31,         19,       61,       6,      "W",
-  "North Carolina",                 14,         21,       67,       8,      "W",
-  "Creighton",                      23,         24,       62,       9,      "L",
-  "Stanford",                       88,         15,       58,       5,      "W",
-  "Tennessee",                       8,         16,       59,       4,      "W",
-  "Yale",                          102,         14,       60,       5,      "W",
-  "Stony Brook",                   285,          7,       50,       2,      "W",
-  # Big 12 Conference
-  "Arizona",                        12,         23,       68,      10,      "L",
-  "Baylor",                         42,         17,       63,       5,      "W",
-  "BYU",                            55,         20,       60,       7,      "W",
-  "Cincinnati",                    120,         13,       57,       4,      "W",
-  "Colorado",                      145,         11,       55,       3,      "W",
-  "Houston",                        29,         14,       58,       4,      "W",
-  "Iowa State",                     19,         18,       62,       6,      "L",
-  "Kansas State",                   67,         16,       61,       5,      "W",
-  "Oklahoma State",                198,         10,       54,       3,      "W",
-  "TCU",                           112,         13,       56,       4,      "W",
-  "Texas Tech",                     38,         15,       60,       4,      "W",
-  "UCF",                           160,         12,       55,       4,      "W",
-  "Utah",                          190,         11,       53,       3,      "W",
-  "West Virginia",                  80,         17,       59,       6,      "W",
-  # Big 12 Tournament / Postseason
-  "Arizona",                        12,         20,       65,       8,      "W",
-  "Iowa State",                     19,         17,       63,       5,      "W",
-  "Houston",                        29,         15,       60,       5,      "L"
+top50 <- tribble(
+  ~team,                  ~kenpom_rank, ~adj_o, ~three_pct, ~three_par,
+  "Auburn",                          1,  125.3,      0.380,      0.405,
+  "Duke",                            2,  124.1,      0.392,      0.432,
+  "Florida",                         3,  123.7,      0.367,      0.378,
+  "Iowa State",                      4,  123.2,      0.374,      0.421,
+  "Tennessee",                       5,  122.8,      0.343,      0.310,
+  "St. John's",                      6,  122.4,      0.369,      0.398,
+  "Houston",                         7,  121.9,      0.335,      0.347,
+  "Alabama",                         8,  121.5,      0.356,      0.445,
+  "Marquette",                       9,  121.1,      0.361,      0.408,
+  "Kentucky",                       10,  120.7,      0.352,      0.372,
+  "Michigan State",                 11,  120.2,      0.358,      0.364,
+  "Wisconsin",                      12,  119.8,      0.375,      0.389,
+  "Purdue",                         13,  119.4,      0.378,      0.356,
+  "Arizona",                        14,  119.0,      0.349,      0.393,
+  "North Carolina",                 15,  118.6,      0.362,      0.415,
+  "Creighton",                      16,  118.3,      0.388,      0.441,
+  "Texas A&M",                      17,  117.9,      0.345,      0.342,
+  "Kansas",                         18,  117.5,      0.353,      0.371,
+  "Gonzaga",                        19,  117.1,      0.370,      0.397,
+  "UCLA",                           20,  116.8,      0.358,      0.362,
+  "Ole Miss",                       21,  116.5,      0.348,      0.388,
+  "Memphis",                        22,  116.2,      0.336,      0.330,
+  "Illinois",                       23,  115.9,      0.355,      0.375,
+  "Baylor",                         24,  115.6,      0.347,      0.385,
+  "Michigan",                       25,  115.3,      0.363,      0.401,
+  "Missouri",                       26,  115.1,      0.352,      0.378,
+  "Texas Tech",                     27,  114.8,      0.338,      0.352,
+  "Arkansas",                       28,  114.5,      0.344,      0.363,
+  "Indiana",                        29,  114.3,      0.359,      0.390,
+  "Louisville",                     30,  114.0,      0.365,      0.408,
+  "Pittsburgh",                     31,  113.7,      0.371,      0.422,
+  "Kansas State",                   32,  113.4,      0.346,      0.367,
+  "San Diego State",                33,  113.2,      0.332,      0.318,
+  "Clemson",                        34,  112.9,      0.355,      0.382,
+  "Oregon",                         35,  112.6,      0.362,      0.395,
+  "Wake Forest",                    36,  112.4,      0.373,      0.428,
+  "VCU",                            37,  112.1,      0.340,      0.355,
+  "Xavier",                         38,  111.8,      0.358,      0.387,
+  "Utah State",                     39,  111.6,      0.369,      0.410,
+  "Dayton",                         40,  111.3,      0.372,      0.418,
+  "Ohio State",                     41,  111.1,      0.351,      0.376,
+  "BYU",                            42,  110.8,      0.357,      0.390,
+  "West Virginia",                  43,  110.6,      0.343,      0.360,
+  "Miami FL",                       44,  110.3,      0.359,      0.383,
+  "NC State",                       45,  110.1,      0.365,      0.400,
+  "Mississippi State",              46,  109.8,      0.342,      0.354,
+  "Rutgers",                        47,  109.6,      0.337,      0.340,
+  "Nebraska",                       48,  109.3,      0.354,      0.375,
+  "Georgetown",                     49,  109.1,      0.360,      0.388,
+  "Northwestern",                   50,  108.9,      0.356,      0.371
 )
 
-# ============================================================
-# CALCULATIONS
-# ============================================================
-
-ku_games <- ku_games %>%
-  mutate(
-    opp_3par        = opp_3pa / opp_fga,          # opponent 3PA rate
-    opp_3p_pct      = opp_3pm / opp_3pa,          # opponent 3P%
-    top50_offense   = kenpom_off_rank <= 50,       # flag for elite offenses
-    rank_group      = case_when(
-      kenpom_off_rank <= 25  ~ "Top 25",
-      kenpom_off_rank <= 50  ~ "26–50",
-      kenpom_off_rank <= 100 ~ "51–100",
-      TRUE                   ~ "101+"
-    ),
-    rank_group = factor(rank_group, levels = c("Top 25", "26–50", "51–100", "101+"))
-  )
+# Flag KU
+top50 <- top50 %>%
+  mutate(is_ku = team == "Kansas")
 
 # ============================================================
-# SUMMARY STATISTICS
+# 1. CORRELATION: 3P% vs Adjusted Offensive Efficiency
 # ============================================================
 
-summary_by_group <- ku_games %>%
-  group_by(rank_group) %>%
-  summarise(
-    n_games       = n(),
-    avg_3par      = mean(opp_3par),
-    sd_3par       = sd(opp_3par),
-    median_3par   = median(opp_3par),
-    avg_3pa       = mean(opp_3pa),
-    avg_fga       = mean(opp_fga),
-    .groups = "drop"
-  )
+cor_test <- cor.test(top50$three_pct, top50$adj_o, method = "pearson")
 
-cat("=== Opponent 3PA Rate by KenPom Offensive Rank Group ===\n\n")
-print(summary_by_group %>%
-        mutate(across(where(is.double), ~round(.x, 3))))
+cat("=== Correlation: 3P% vs KenPom Adjusted Offensive Efficiency ===\n")
+cat(sprintf("r = %.3f, p = %.4f\n\n", cor_test$estimate, cor_test$p.value))
 
-# Split: top 50 vs outside top 50
-top50_summary <- ku_games %>%
-  group_by(top50_offense) %>%
-  summarise(
-    n_games     = n(),
-    avg_3par    = mean(opp_3par),
-    sd_3par     = sd(opp_3par),
-    .groups = "drop"
-  ) %>%
-  mutate(group_label = ifelse(top50_offense, "Top 50 KenPom Offense", "Outside Top 50"))
+# Fit linear model
+lm_fit <- lm(adj_o ~ three_pct, data = top50)
+cat("=== Linear Model: Adj-O ~ 3P% ===\n")
+print(summary(lm_fit))
 
-cat("\n=== Top 50 vs Outside Top 50 KenPom Offenses ===\n\n")
-print(top50_summary %>%
-        select(group_label, n_games, avg_3par, sd_3par) %>%
-        mutate(across(where(is.double), ~round(.x, 3))))
+# ============================================================
+# 2. WHERE DOES KU RANK ON 3P% AMONG TOP 50?
+# ============================================================
 
-# T-test
-t_result <- t.test(
-  opp_3par ~ top50_offense,
-  data = ku_games
-)
-cat("\n=== Welch Two-Sample t-Test ===\n")
-cat(sprintf("t = %.3f, df = %.1f, p = %.4f\n\n",
-            t_result$statistic, t_result$parameter, t_result$p.value))
+ku_row <- filter(top50, is_ku)
+
+pct_rank <- top50 %>%
+  arrange(desc(three_pct)) %>%
+  mutate(rank_3pct = row_number()) %>%
+  filter(is_ku) %>%
+  pull(rank_3pct)
+
+cat(sprintf("\n=== KU Among Top 50 KenPom Offenses ===\n"))
+cat(sprintf("KU 3P%%:               %.1f%%\n", ku_row$three_pct * 100))
+cat(sprintf("KU KenPom Offense Rank: #%d\n", ku_row$kenpom_rank))
+cat(sprintf("KU 3P%% rank (in top 50): %d of 50\n", pct_rank))
+cat(sprintf("Top-50 avg 3P%%:        %.1f%%\n", mean(top50$three_pct) * 100))
+cat(sprintf("KU vs avg:             %+.1f pp\n\n",
+            (ku_row$three_pct - mean(top50$three_pct)) * 100))
 
 # ============================================================
 # VISUALIZATIONS
@@ -124,7 +119,7 @@ theme_ku <- function() {
   theme_minimal(base_size = 13) +
     theme(
       plot.title    = element_text(face = "bold", size = 15, color = "#0051A5"),
-      plot.subtitle = element_text(color = "gray40"),
+      plot.subtitle = element_text(color = "gray40", size = 11),
       axis.title    = element_text(color = "gray30"),
       panel.grid.minor = element_blank()
     )
@@ -133,102 +128,78 @@ theme_ku <- function() {
 ku_blue <- "#0051A5"
 ku_red  <- "#E8000D"
 
-# Plot 1: 3PAr by KenPom rank group (box + jitter)
-p1 <- ggplot(ku_games, aes(x = rank_group, y = opp_3par, fill = rank_group)) +
-  geom_boxplot(alpha = 0.7, outlier.shape = NA) +
-  geom_jitter(aes(color = ku_result), width = 0.15, size = 2.5) +
-  scale_fill_manual(values = c("#0051A5", "#4D8CC8", "#9BBDE0", "#D0E4F5"), guide = "none") +
-  scale_color_manual(values = c("W" = "forestgreen", "L" = ku_red), name = "KU Result") +
-  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+# ── Plot 1: Scatter — 3P% vs Adj-O with regression line, KU highlighted ──────
+p1 <- ggplot(top50, aes(x = three_pct, y = adj_o)) +
+  geom_smooth(method = "lm", color = "gray60", fill = "gray85", se = TRUE, linewidth = 0.8) +
+  geom_point(data = filter(top50, !is_ku),
+             color = "steelblue", size = 3, alpha = 0.7) +
+  geom_point(data = filter(top50,  is_ku),
+             color = ku_red, size = 5, shape = 18) +
+  geom_text(data = filter(top50, is_ku),
+            aes(label = "Kansas"), color = ku_red,
+            vjust = -1.1, fontface = "bold", size = 4) +
+  scale_x_continuous(labels = percent_format(accuracy = 1),
+                     name   = "Team 3-Point Field Goal %") +
+  scale_y_continuous(name = "KenPom Adjusted Offensive Efficiency") +
   labs(
-    title    = "KU: Opponent 3-Point Attempt Rate by KenPom Offensive Rank",
-    subtitle = "2024–25 Season | 3PAr = Opponent 3PA / Opponent FGA",
-    x        = "Opponent KenPom Offensive Rank Group",
-    y        = "Opponent 3PA Rate"
+    title    = "3P% vs Offensive Efficiency: Top 50 KenPom Offenses (2024-25)",
+    subtitle = sprintf("Pearson r = %.2f  |  Each point = one team  |  KU shown in red",
+                       cor_test$estimate)
   ) +
   theme_ku()
 
-ggsave("ku_3par_by_rank_group.png", p1, width = 9, height = 6, dpi = 150)
-cat("Saved: ku_3par_by_rank_group.png\n")
+ggsave("ku_3pct_vs_adj_o.png", p1, width = 9, height = 6, dpi = 150)
+cat("Saved: ku_3pct_vs_adj_o.png\n")
 
-# Plot 2: Scatter — KenPom offensive rank vs opponent 3PAr
-p2 <- ggplot(ku_games, aes(x = kenpom_off_rank, y = opp_3par)) +
-  geom_vline(xintercept = 50, linetype = "dashed", color = "gray60", linewidth = 0.8) +
-  annotate("text", x = 48, y = max(ku_games$opp_3par) * 0.98,
-           label = "Top 50\ncutoff", hjust = 1, size = 3.2, color = "gray50") +
-  geom_smooth(method = "loess", color = ku_blue, fill = ku_blue, alpha = 0.15, se = TRUE) +
-  geom_point(aes(color = ku_result), size = 3) +
-  ggrepel::geom_text_repel(
-    data = filter(ku_games, kenpom_off_rank <= 30 | opp_3par > 0.37),
-    aes(label = opponent), size = 3, color = "gray30", max.overlaps = 8
-  ) +
-  scale_color_manual(values = c("W" = "forestgreen", "L" = ku_red), name = "KU Result") +
-  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+# ── Plot 2: Dot plot — teams ranked by 3P%, KU highlighted ───────────────────
+p2 <- top50 %>%
+  arrange(three_pct) %>%
+  mutate(team = factor(team, levels = team)) %>%
+  ggplot(aes(x = three_pct, y = team, color = is_ku)) +
+  geom_segment(aes(x = mean(top50$three_pct), xend = three_pct,
+                   y = team, yend = team),
+               color = "gray80", linewidth = 0.5) +
+  geom_point(size = 3) +
+  geom_vline(xintercept = mean(top50$three_pct),
+             linetype = "dashed", color = "gray50", linewidth = 0.7) +
+  annotate("text", x = mean(top50$three_pct) + 0.001,
+           y = 1, label = "Avg", hjust = 0, color = "gray50", size = 3.2) +
+  scale_color_manual(values = c("FALSE" = "steelblue", "TRUE" = ku_red), guide = "none") +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
   labs(
-    title    = "Opponent 3PA Rate vs KenPom Offensive Rank (KU 2024–25)",
-    subtitle = "Lower rank = better offense | LOESS trend line with 95% CI",
-    x        = "Opponent KenPom Offensive Rank",
-    y        = "Opponent 3PA Rate"
+    title    = "3-Point % Among Top 50 KenPom Offenses (2024-25)",
+    subtitle = "Kansas highlighted in red | Dashed line = group average",
+    x        = "Team 3-Point Field Goal %",
+    y        = NULL
   ) +
-  theme_ku()
+  theme_ku() +
+  theme(axis.text.y = element_text(size = 8,
+                                   color = ifelse(levels(arrange(top50, three_pct)$team %>%
+                                                           factor(levels = arrange(top50, three_pct)$team))
+                                                  == "Kansas", ku_red, "gray30")))
 
-# Use ggrepel if available, otherwise fallback
-tryCatch({
-  library(ggrepel)
-  ggsave("ku_3par_vs_kenpom_rank.png", p2, width = 9, height = 6, dpi = 150)
-  cat("Saved: ku_3par_vs_kenpom_rank.png\n")
-}, error = function(e) {
-  p2_simple <- p2 + geom_text(
-    data = filter(ku_games, kenpom_off_rank <= 30 | opp_3par > 0.37),
-    aes(label = opponent), size = 3, color = "gray30", vjust = -0.8
-  )
-  ggsave("ku_3par_vs_kenpom_rank.png", p2_simple, width = 9, height = 6, dpi = 150)
-  cat("Saved: ku_3par_vs_kenpom_rank.png\n")
-})
+ggsave("ku_3pct_ranking.png", p2, width = 8, height = 12, dpi = 150)
+cat("Saved: ku_3pct_ranking.png\n")
 
-# Plot 3: Mean 3PAr — Top 50 vs Outside Top 50 bar chart
-p3 <- top50_summary %>%
-  ggplot(aes(x = group_label, y = avg_3par, fill = group_label)) +
-  geom_col(width = 0.5) +
-  geom_errorbar(
-    aes(ymin = avg_3par - sd_3par, ymax = avg_3par + sd_3par),
-    width = 0.15, color = "gray30"
-  ) +
-  geom_text(aes(label = percent(avg_3par, accuracy = 0.1)),
-            vjust = -0.8, fontface = "bold", size = 4.5) +
-  scale_fill_manual(values = c(ku_blue, "gray70"), guide = "none") +
+# ── Plot 3: 3PAr vs 3P% — shot selection vs efficiency ───────────────────────
+p3 <- ggplot(top50, aes(x = three_par, y = three_pct)) +
+  geom_smooth(method = "lm", color = "gray60", fill = "gray85", se = TRUE, linewidth = 0.8) +
+  geom_point(data = filter(top50, !is_ku),
+             color = "steelblue", size = 3, alpha = 0.7) +
+  geom_point(data = filter(top50,  is_ku),
+             color = ku_red, size = 5, shape = 18) +
+  geom_text(data = filter(top50, is_ku),
+            aes(label = "Kansas"), color = ku_red,
+            vjust = -1.1, fontface = "bold", size = 4) +
+  scale_x_continuous(labels = percent_format(accuracy = 1),
+                     name   = "3-Point Attempt Rate (3PA / FGA)") +
   scale_y_continuous(labels = percent_format(accuracy = 1),
-                     expand = expansion(mult = c(0, 0.15))) +
+                     name   = "3-Point Field Goal %") +
   labs(
-    title    = "KU Average Opponent 3PA Rate Allowed",
-    subtitle = "Top 50 KenPom Offenses vs Outside Top 50 | Error bars = ±1 SD",
-    x        = NULL,
-    y        = "Mean Opponent 3PA Rate"
+    title    = "Shot Selection vs 3P% Efficiency: Top 50 KenPom Offenses (2024-25)",
+    subtitle = "Do teams that shoot more 3s also shoot them better?"
   ) +
   theme_ku()
 
-ggsave("ku_3par_top50_comparison.png", p3, width = 7, height = 6, dpi = 150)
-cat("Saved: ku_3par_top50_comparison.png\n")
-
-# ============================================================
-# KEY FINDINGS
-# ============================================================
-
-avg_top50    <- filter(ku_games, top50_offense) %>% pull(opp_3par) %>% mean()
-avg_non_top50 <- filter(ku_games, !top50_offense) %>% pull(opp_3par) %>% mean()
-diff_pct     <- avg_top50 - avg_non_top50
-
-cat("\n=== KEY FINDINGS ===\n")
-cat(sprintf("Avg opponent 3PAr vs Top 50 KenPom offenses:    %.1f%%\n", avg_top50 * 100))
-cat(sprintf("Avg opponent 3PAr vs non-Top 50 KenPom offenses: %.1f%%\n", avg_non_top50 * 100))
-cat(sprintf("Difference:                                       %+.1f pp\n", diff_pct * 100))
-cat(sprintf("p-value (t-test):                                 %.4f\n", t_result$p.value))
-
-if (t_result$p.value < 0.05) {
-  cat("\nConclusion: Top 50 KenPom offenses attempt 3-pointers at a SIGNIFICANTLY\n")
-  cat("different rate against KU compared to lower-ranked offenses.\n")
-} else {
-  cat("\nConclusion: No statistically significant difference in 3PAr allowed by KU\n")
-  cat("between Top 50 and non-Top 50 KenPom offenses (p >= 0.05).\n")
-  cat("Elite offenses do not appear to shift their shot selection against KU's defense.\n")
-}
+ggsave("ku_3par_vs_3pct.png", p3, width = 9, height = 6, dpi = 150)
+cat("Saved: ku_3par_vs_3pct.png\n")
