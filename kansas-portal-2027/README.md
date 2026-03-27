@@ -1,49 +1,36 @@
-# Kansas Basketball 2026–27 Portal Analysis
+# Kansas Basketball — 2026–27 Transfer Portal Analysis
 
-Transfer portal scenario planning and roster optimization for the 2026–27 season.
+## 📋 [VIEW FULL REPORT →](REPORT.md)
 
-## Files
+The report covers both roster scenarios, all portal target rankings, undervalued
+player deep-dives, and budget optimization. No code required — designed to be
+read directly in the browser.
+
+---
+
+## Scenarios at a Glance
+
+| | Scenario A | Scenario B |
+|---|---|---|
+| **Retention factor** | Bidunga stays | Bidunga leaves |
+| **Portal budget** | ~$2.3M | ~$7.6M |
+| **Top need** | Guards + wing | Center + guards + wing |
+| **Projected KenPom** | Top 5–10 | Top 3–8 (w/ Broome) |
+
+## Key Findings
+
+- **Carter + Davis** appear on every optimized roster regardless of scenario — securing both should be the #1 recruiting priority
+- **Johnell Davis (FAU)** is the top undervalued target: top-20 nationally in offensive efficiency, plays elite defense, likely priced $400–700K below a P4 player with equivalent numbers
+- **Rubin Jones (Cincinnati)** is the undervalued center option in Scenario B — elite ORB% and block rate at ~40 cents on the dollar vs. comparable P4 bigs
+- Both scenarios project as **Big 12 title contenders and realistic Final Four rosters**
+
+---
+
+## Analytics Files (for staff / data team)
 
 | File | Description |
-|------|-------------|
-| `player_data.R` | Player database — returning roster, freshmen, portal target pool with BartTorvik/EvanMiya-style metrics |
-| `nil_market_model.R` | NIL salary inference model — estimates fair market value from efficiency stats + program exposure |
-| `roster_optimizer.R` | Greedy roster optimizer — maximizes Team Efficiency Score within NIL budget + position constraints |
-| `kansas_portal_report_2026.Rmd` | Full rendered report — Scenario A vs. B, visualizations, recommendations |
-
-## Scenarios
-
-- **Scenario A** — Flory Bidunga stays. ~$8M total roster budget, ~$2.3M for portal.
-  Focus: premium guard(s) + wing depth.
-- **Scenario B** — Bidunga leaves. ~$10.5M total, ~$7.6M for portal.
-  Focus: center replacement + guard + wing.
-
-## Running the Analysis
-
-```r
-# Install dependencies if needed
-install.packages(c("dplyr", "tidyr", "ggplot2", "ggrepel",
-                   "knitr", "kableExtra", "scales"))
-
-# Run optimizer directly
-source("roster_optimizer.R")
-
-# Run NIL market model
-source("nil_market_model.R")
-
-# Render full report
-rmarkdown::render("kansas_portal_report_2026.Rmd")
-```
-
-## Key Methodology Notes
-
-- **Efficiency metrics** are based on BartTorvik / EvanMiya frameworks using
-  2024–25 season data as the primary baseline with development trajectory
-  adjustments for returning players.
-- **NIL estimates** are inferred from a multiplier model anchored to publicly
-  reported 2024–25 deals (On3, 247Sports). The model applies position scarcity,
-  program exposure, and defensive premiums. Confidence interval: ±20–30%.
-- **Portal availability** is a projection based on eligibility status and
-  program context — not confirmed entries.
-- All estimates should be re-calibrated when actual 2025–26 season stats and
-  portal entry announcements become available.
+|---|---|
+| [`player_data.R`](player_data.R) | Player database — returning roster, freshmen, full portal target pool |
+| [`nil_market_model.R`](nil_market_model.R) | NIL salary inference model with methodology |
+| [`roster_optimizer.R`](roster_optimizer.R) | Greedy roster optimizer — maximizes efficiency within budget + position constraints |
+| [`kansas_portal_report_2026.Rmd`](kansas_portal_report_2026.Rmd) | R Markdown source for a rendered HTML version |
