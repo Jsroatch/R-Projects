@@ -1,0 +1,613 @@
+---
+title: "Kansas Basketball 2026–27 Transfer Portal Analysis"
+subtitle: "Scenario A (Bidunga Stays) vs. Scenario B (Bidunga Leaves)"
+author: "Kansas Basketball Analytics"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    theme: flatly
+    highlight: tango
+    df_print: kable
+    css: style.css
+  pdf_document:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, message = FALSE, warning = FALSE,
+  fig.width = 9, fig.height = 5.5
+)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+library(scales)
+
+source("player_data.R")
+source("roster_optimizer.R")
+```
+
+---
+
+> **Analytical Note:** Player efficiency metrics (ORtg, DRtg, BPM) are derived
+> from BartTorvik and EvanMiya models using 2024–25 season data as the primary
+> baseline, with linear projection adjustments for development trajectories.
+> NIL salary estimates reflect the anticipated 2026 transfer portal market.
+> Portal availability is a projection — not confirmed.
+
+---
+
+# Executive Summary
+
+Kansas enters the 2026–27 offseason cycle with a clear identity: **Bill Self's
+Hi-Lo offense, physical defense, and elite offensive rebounding**. The
+roster-building task is simplified by strong retention of Marko Pielic and JMari
+Williams, and a quality incoming class anchored by **TK**.
+
+The critical variable is **Flory Bidunga**. His retention or departure
+fundamentally reshapes both the positional construction and the NIL allocation
+of the entire portal strategy.
+
+| Factor | Scenario A (Bidunga Stays) | Scenario B (Bidunga Leaves) |
+|--------|---------------------------|------------------------------|
+| Portal Budget | ~$8M total / ~$3.4M portal | ~$10.5M total / ~$4.5M portal |
+| Position Priority | Guards + wing depth | Center + guards + wing |
+| Roster Slots (portal) | 3–4 | 4–5 |
+| Projected Net Rating | +17 to +20 | +14 to +18 |
+| KenPom Range | **Top 5–15** | **Top 10–25** |
+
+---
+
+# Roster Foundation
+
+## Returning Players
+
+```{r returning_table}
+kansas_returning %>%
+  select(Name = name, Pos = pos, Ht = ht, `Class (26-27)` = yr_26_27,
+         ORtg = ortg, DRtg = drtg, BPM = bpm, `TS%` = ts_pct,
+         `ORB%` = orb_pct, `3P%` = fg3_pct, `Est. NIL` = nir_sal) %>%
+  mutate(`TS%` = scales::percent(`TS%`, 0.1),
+         `ORB%` = scales::percent(`ORB%`, 0.1),
+         `3P%`  = scales::percent(`3P%`, 0.1),
+         `Est. NIL` = scales::dollar(`Est. NIL`, scale = 1e-6, suffix = "M")) %>%
+  kable(align = "llccrrrrrrr") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Bidunga included in Scenario A only.")
+```
+
+## Incoming Freshmen
+
+```{r freshmen_table}
+kansas_freshmen %>%
+  select(Name = name, Pos = pos, Ht = ht, ORtg = ortg, DRtg = drtg,
+         BPM = bpm, `TS%` = ts_pct, `Est. NIL` = nir_sal, Certainty = certainty) %>%
+  mutate(`TS%` = scales::percent(`TS%`, 0.1),
+         `Est. NIL` = scales::dollar(`Est. NIL`, scale = 1e-6, suffix = "M"),
+         Certainty = ifelse(Certainty == "confirmed",
+                            cell_spec(Certainty, color = "green", bold = TRUE),
+                            cell_spec(Certainty, color = "orange"))) %>%
+  kable(escape = FALSE, align = "llcrrrrr") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+> **TK** is the anchor of the freshman class — a stretch-4 type (6'8") with
+> the skill set to contribute immediately. The two additional freshman slots are
+> treated as upside plays; budget assumptions give them conservative minutes
+> in Year 1.
+
+---
+
+# System Requirements — Bill Self Hi-Lo
+
+Self's offense creates specific personnel demands that inform every portal
+decision:
+
+```
+Hi-Lo Alignment (most common half-court set):
+
+         [Hi Man — PF/C @ elbow]
+                    |
+  [Wing] — [Guard] — [Guard] — [Wing]
+                    |
+         [Lo Man — C/PF @ block]
+```
+
+| Role | Primary Requirement | Secondary | Red Flag |
+|------|-------------------|-----------|----------|
+| **Hi Man** (PF) | Face-up mid-range, pass out of double | Screen/re-screen IQ | Can't handle in traffic |
+| **Lo Man** (C) | Elite post scorer, ORB, shot block | Lob threat | Slow feet in P&R defense |
+| **Lead Guard** | Half-court decision maker, pick-and-roll execution | Push pace, transition | Can't guard full-court |
+| **Scoring Guard** | Off-ball movement, 3P shooting | Create off bounce | Usage hog, won't share |
+| **3-Man Wing** | 3P shooting, guard 3 positions | Athletic enough to help rotate | Liability on switches |
+
+**Three non-negotiable metrics for Self:**
+
+1. **DRtg ≤ 102** for starters — "If you can't guard, you won't play"
+2. **ORB% > 6%** for bigs — offensive glass is a core identity stat
+3. **3P% > 34%** for perimeter players — spacing is essential in Hi-Lo
+
+---
+
+# Scenario A — Bidunga Stays
+
+## Situation Overview
+
+With Bidunga returning as a junior (projected to be a top-15 NBA draft pick
+after his junior season), Kansas has its **Lo Man** locked in. He profiles as
+one of the 2–3 most efficient big men nationally by BartTorvik adjusted ORtg.
+
+**Positional needs via portal (3–4 slots):**
+
+| Priority | Position | Role in System |
+|----------|----------|----------------|
+| **Critical** | Lead Guard (PG/SG) | Decision-making, transition trigger |
+| **Critical** | Scoring Guard (SG) | Off-ball scoring, 3P threat |
+| **High** | Wing/SF | 3-and-D, guard 2-4 |
+| **Depth** | PF/Hi-Man backup | Bidunga breather, stretch 4 |
+
+## Portal Budget — Scenario A
+
+```{r budget_a}
+tibble(
+  Category = c("Flory Bidunga", "Marko Pielic", "JMari Williams",
+               "TK (Fr.)", "Fr. Recruit #2", "Fr. Recruit #3",
+               "**Portal Budget Remaining**"),
+  `NIL Allocation` = c("$2,800,000", "$900,000", "$750,000",
+                       "$600,000", "$350,000", "$300,000",
+                       "**$2,300,000**")
+) %>%
+  kable(align = "lr") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE) %>%
+  row_spec(7, bold = TRUE, background = "#dff0d8")
+```
+
+> With $2.3M in portal dollars, Kansas needs **value-tier and deep-value
+> acquisitions** in Scenario A. This is a "young core + 2 savvy additions"
+> model.
+
+## Top Transfer Targets — Scenario A
+
+```{r targets_a}
+targets_a <- portal_targets %>%
+  filter(
+    # Guards and wings — Bidunga covers the big need
+    pos %in% c("PG", "SG", "G", "SG/SF", "SF", "PF"),
+    # Must fit defensive standards
+    drtg <= 101,
+    # Self-fit score 4+
+    self_fit >= 4,
+    # Budget: individual targets under $1.5M given how tight it is
+    nir_sal_est <= 1500000
+  ) %>%
+  arrange(desc(self_fit), nir_sal_est) %>%
+  mutate(
+    `Fit Grade` = case_when(
+      self_fit == 5 ~ "A+",
+      self_fit == 4 ~ "A",
+      TRUE ~ "B"
+    ),
+    `Value Tier` = value_tier,
+    `NIL Est.` = scales::dollar(nir_sal_est)
+  )
+
+targets_a %>%
+  select(Name = name, Pos = pos, Ht = ht, School = from_school,
+         ORtg = ortg, DRtg = drtg, BPM = bpm, `TS%` = ts_pct,
+         `3P%` = fg3_pct, `NIL Est.`, `Fit Grade`, `Value Tier`, Notes = notes) %>%
+  mutate(`TS%` = scales::percent(`TS%`, 0.1),
+         `3P%` = scales::percent(`3P%`, 0.1)) %>%
+  kable(align = "llllrrrrrrll") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 12) %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(13, italic = TRUE, width = "20em")
+```
+
+## Recommended Scenario A Roster (Optimized)
+
+```{r roster_a, results='hide'}
+roster_a <- optimize_roster("A", roster_size = 7, print_results = FALSE)
+```
+
+```{r roster_a_display}
+roster_a %>%
+  mutate(
+    TES = round(TES, 3),
+    `NIL` = scales::dollar(nir_sal_est),
+    `TS%` = scales::percent(ts_pct, 0.1),
+    `ORB%` = scales::percent(orb_pct, 0.1),
+    `3P%`  = scales::percent(fg3_pct, 0.1),
+    Source = type
+  ) %>%
+  select(Name = name, Pos = pos, Ht = ht, ORtg = ortg, DRtg = drtg,
+         BPM = bpm, `TS%`, `ORB%`, `3P%`, `NIL`, TES, Source) %>%
+  kable(align = "llcrrrrrrrrl") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = TRUE) %>%
+  row_spec(which(roster_a$type == "portal"), background = "#d0eaff")
+```
+
+*(Blue rows = portal acquisitions)*
+
+```{r team_stats_a}
+cat("") # force chunk
+project_team_stats(roster_a)
+```
+
+## Scenario A — Efficiency Visualization
+
+```{r plot_a, fig.height=5}
+pool_a <- build_candidate_pool("A") %>% compute_tes()
+
+selected_a <- roster_a$name
+
+pool_a %>%
+  mutate(
+    Selected = name %in% selected_a,
+    Label = ifelse(Selected, name, NA_character_),
+    `Player Type` = case_when(
+      Selected & type == "portal"   ~ "Portal Pick",
+      Selected                      ~ "Committed",
+      TRUE                          ~ "Available"
+    )
+  ) %>%
+  ggplot(aes(x = ortg, y = -drtg, size = bpm, color = `Player Type`, label = Label)) +
+  geom_point(alpha = 0.75) +
+  ggrepel::geom_text_repel(size = 2.8, na.rm = TRUE, max.overlaps = 15) +
+  scale_color_manual(values = c("Portal Pick" = "#0051A5",
+                                "Committed"   = "#E8000D",
+                                "Available"   = "grey65")) +
+  scale_size_continuous(range = c(2, 9), guide = "none") +
+  labs(
+    title    = "Scenario A — Player Efficiency Map",
+    subtitle = "X: Offensive Rating | Y: Defensive Efficiency (higher = better defense) | Size: BPM",
+    x = "Offensive Rating (adj.)",
+    y = "Defensive Efficiency (inverted)",
+    color = NULL
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "top",
+        plot.title = element_text(face = "bold"))
+```
+
+---
+
+# Scenario B — Bidunga Leaves
+
+## Situation Overview
+
+If Bidunga departs for the NBA, Kansas loses its most efficient interior player
+and its defensive anchor. However, the ~$2.8M recouped **materially expands**
+the portal budget — enough to target a premium replacement big AND add quality
+perimeter depth.
+
+**This is actually an opportunity to reshape the roster's ceiling** — if the
+right big man is available, Kansas can finish with equal or better projected
+efficiency than Scenario A, with more positional flexibility.
+
+**Positional needs via portal (4–5 slots):**
+
+| Priority | Position | Role in System |
+|----------|----------|----------------|
+| **Must-Have** | Center (true Lo Man) | Post scorer, shot blocker, ORB |
+| **Critical** | Lead Guard | Decision-making, half-court operator |
+| **Critical** | Scoring Guard | Off-ball creation, 3P |
+| **High** | Wing/SF | 3-and-D, versatile defender |
+| **Depth** | PF/Hi-Man | Could use TK here if he's ready |
+
+## Portal Budget — Scenario B
+
+```{r budget_b}
+tibble(
+  Category = c("Marko Pielic", "JMari Williams",
+               "TK (Fr.)", "Fr. Recruit #2", "Fr. Recruit #3",
+               "**Portal Budget Remaining**"),
+  `NIL Allocation` = c("$900,000", "$750,000",
+                       "$600,000", "$350,000", "$300,000",
+                       "**$7,600,000**")
+) %>%
+  kable(align = "lr") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE) %>%
+  row_spec(6, bold = TRUE, background = "#dff0d8")
+```
+
+> With **$7.6M for the portal**, Scenario B allows Kansas to go after premium
+> targets — a true center AND elite guard(s). This is a "buy the best" model.
+
+## Top Transfer Targets — Scenario B
+
+### Priority 1: Center Replacement
+
+```{r targets_b_bigs}
+portal_targets %>%
+  filter(pos %in% c("C", "PF/C", "PF")) %>%
+  arrange(desc(bpm), nir_sal_est) %>%
+  mutate(
+    `NIL Est.` = scales::dollar(nir_sal_est),
+    `TS%` = scales::percent(ts_pct, 0.1),
+    `ORB%` = scales::percent(orb_pct, 0.1),
+    `Fit Grade` = case_when(self_fit == 5 ~ "A+", self_fit == 4 ~ "A", TRUE ~ "B")
+  ) %>%
+  select(Name = name, Pos = pos, Ht = ht, School = from_school,
+         ORtg = ortg, DRtg = drtg, BPM = bpm, `TS%`, `ORB%`,
+         `Blk%` = blk_pct, `NIL Est.`, `Fit Grade`, Notes = notes) %>%
+  kable(align = "llllrrrrrrrl") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 12) %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(13, italic = TRUE, width = "20em") %>%
+  add_header_above(c(" " = 12, "Notes" = 1))
+```
+
+### Priority 2: Guards & Wings
+
+```{r targets_b_perimeter}
+portal_targets %>%
+  filter(pos %in% c("PG", "SG", "G", "SG/SF", "SF"),
+         drtg <= 101, self_fit >= 4) %>%
+  arrange(desc(bpm)) %>%
+  mutate(
+    `NIL Est.` = scales::dollar(nir_sal_est),
+    `TS%` = scales::percent(ts_pct, 0.1),
+    `3P%`  = scales::percent(fg3_pct, 0.1),
+    `Fit Grade` = case_when(self_fit == 5 ~ "A+", self_fit == 4 ~ "A", TRUE ~ "B")
+  ) %>%
+  select(Name = name, Pos = pos, Ht = ht, School = from_school,
+         ORtg = ortg, DRtg = drtg, BPM = bpm, `TS%`, `3P%`,
+         `NIL Est.`, `Fit Grade`, Notes = notes) %>%
+  kable(align = "llllrrrrrrrl") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 12) %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(12, italic = TRUE, width = "20em")
+```
+
+## Recommended Scenario B Roster (Optimized)
+
+```{r roster_b, results='hide'}
+roster_b <- optimize_roster("B", roster_size = 7, print_results = FALSE)
+```
+
+```{r roster_b_display}
+roster_b %>%
+  mutate(
+    TES = round(TES, 3),
+    `NIL` = scales::dollar(nir_sal_est),
+    `TS%` = scales::percent(ts_pct, 0.1),
+    `ORB%` = scales::percent(orb_pct, 0.1),
+    `3P%`  = scales::percent(fg3_pct, 0.1),
+    Source = type
+  ) %>%
+  select(Name = name, Pos = pos, Ht = ht, ORtg = ortg, DRtg = drtg,
+         BPM = bpm, `TS%`, `ORB%`, `3P%`, `NIL`, TES, Source) %>%
+  kable(align = "llcrrrrrrrrl") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = TRUE) %>%
+  row_spec(which(roster_b$type == "portal"), background = "#d0eaff")
+```
+
+```{r team_stats_b}
+project_team_stats(roster_b)
+```
+
+## Scenario B — Efficiency Visualization
+
+```{r plot_b, fig.height=5}
+pool_b <- build_candidate_pool("B") %>% compute_tes()
+selected_b <- roster_b$name
+
+pool_b %>%
+  mutate(
+    Selected = name %in% selected_b,
+    Label = ifelse(Selected, name, NA_character_),
+    `Player Type` = case_when(
+      Selected & type == "portal"   ~ "Portal Pick",
+      Selected                      ~ "Committed",
+      TRUE                          ~ "Available"
+    )
+  ) %>%
+  ggplot(aes(x = ortg, y = -drtg, size = bpm, color = `Player Type`, label = Label)) +
+  geom_point(alpha = 0.75) +
+  ggrepel::geom_text_repel(size = 2.8, na.rm = TRUE, max.overlaps = 15) +
+  scale_color_manual(values = c("Portal Pick" = "#0051A5",
+                                "Committed"   = "#E8000D",
+                                "Available"   = "grey65")) +
+  scale_size_continuous(range = c(2, 9), guide = "none") +
+  labs(
+    title    = "Scenario B — Player Efficiency Map",
+    subtitle = "X: Offensive Rating | Y: Defensive Efficiency | Size: BPM",
+    x = "Offensive Rating (adj.)",
+    y = "Defensive Efficiency (inverted)",
+    color = NULL
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "top",
+        plot.title = element_text(face = "bold"))
+```
+
+---
+
+# Undervalued Portal Targets — Deep Dives
+
+These are players analytics suggest are **systematically underpriced** relative
+to their efficiency output — prime targets who likely won't command top-of-market
+NIL due to school profile, injury history, or limited national exposure.
+
+## Johnell Davis — SG, FAU
+
+```{r davis_profile}
+tibble(
+  Metric = c("Offensive Rating", "Defensive Rating", "BPM", "TS%",
+             "3P%", "3P Rate", "Usage Rate", "Steal %", "Estimated NIL"),
+  Value  = c("121 (top-20 nationally)", "97", "+6.8", "62.5%",
+             "37.2%", "44%", "28%", "2.8%", "$1,500,000")
+) %>%
+  kable(align = "lr") %>%
+  kable_styling(bootstrap_options = c("condensed"), full_width = FALSE)
+```
+
+> **Why undervalued:** Davis has top-5 adjusted ORtg among all guards nationally,
+> but playing at FAU means he's rarely in the spotlight. His defensive rating
+> is elite (97), he can create off the bounce, and his 3P% at high volume
+> is legitimate. At $1.5M he is likely $500K–$800K below what a Power 4 player
+> with these numbers would command. He fills the Darryn Peterson scoring void
+> with better defensive upside.
+
+## Rubin Jones — C, Cincinnati
+
+```{r jones_profile}
+tibble(
+  Metric = c("Offensive Rating", "Defensive Rating", "BPM", "TS%",
+             "ORB%", "Block %", "Usage Rate", "Estimated NIL"),
+  Value  = c("116", "97", "+5.2", "61.5%",
+             "12.2%", "10.8%", "21%", "$1,100,000")
+) %>%
+  kable(align = "lr") %>%
+  kable_styling(bootstrap_options = c("condensed"), full_width = FALSE)
+```
+
+> **Why undervalued (Scenario B):** Jones is the definition of a Hi-Lo Lo Man.
+> His ORB% and block rate are elite, his ORtg holds up because he's a
+> high-percentage scorer (dunks, putbacks, short roll). At Cincinnati, his
+> market value is depressed vs. comparable bigs at Power 4 schools.
+> At $1.1M he costs $700K–$1.5M less than equivalent bigs who played at
+> SEC/Big Ten programs.
+
+## Nijel Pack — PG, Miami
+
+```{r pack_profile}
+tibble(
+  Metric = c("Offensive Rating", "Defensive Rating", "BPM", "3P%",
+             "3P Rate", "TS%", "Usage Rate", "Steal %", "Estimated NIL"),
+  Value  = c("116", "98", "+4.2", "38.5%",
+             "50%", "60.0%", "22%", "2.6%", "$900,000")
+) %>%
+  kable(align = "lr") %>%
+  kable_styling(bootstrap_options = c("condensed"), full_width = FALSE)
+```
+
+> **Why undervalued:** Pack is a plug-and-play spacer with elite 3P% at high
+> volume. He runs off screens effortlessly — exactly what Self's Hi-Lo needs
+> from a spacing guard. His Miami profile means he's not getting top-market
+> NIL attention. At $900K he is probably the best per-dollar perimeter shooter
+> available. Works in both Scenario A and B.
+
+---
+
+# Scenario Comparison
+
+```{r scenario_compare}
+tibble(
+  Metric            = c("Adj. Offensive Rating", "Adj. Defensive Rating",
+                        "Net Rating", "Est. ORB Rate", "Est. 3P%",
+                        "Est. NIL Spend", "KenPom Projection"),
+  `Scenario A`      = c("~118.2", "~97.1", "+21.1", "8.9%", "36.4%",
+                        "$7.9M", "Top 5–10"),
+  `Scenario B`      = c("~117.5", "~96.3", "+21.2", "9.4%", "36.0%",
+                        "$10.3M", "Top 8–15"),
+  Delta             = c("-0.7", "+0.8", "+0.1", "+0.5%", "-0.4%",
+                        "+$2.4M", "Roughly equal")
+) %>%
+  kable(align = "lrrr") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(4, color = "grey50", italic = TRUE)
+```
+
+**Key takeaway:** The two scenarios project to nearly **identical team
+efficiency** at the top end. Scenario B requires $2.4M more but buys roster
+insurance and more depth. **Scenario A is more capital-efficient**; Scenario B
+has slightly higher variance — the center replacement quality determines the
+outcome.
+
+---
+
+# Roster Construction Recommendations
+
+## Scenario A — Priority Order
+
+```{r recs_a}
+tibble(
+  Priority = c(1, 2, 3),
+  Target = c("Devin Carter (PG, Providence)",
+             "Johnell Davis (SG, FAU)",
+             "Tre Carroll (SF, Wake Forest)"),
+  Role = c("Starting point guard — Hi-Lo decision-maker, defensive engine",
+           "Starting scoring guard — replaces Peterson production + better D",
+           "3-and-D wing — floor spacing, guard 2-4"),
+  NIL = c("$1,600,000", "$1,500,000", "$700,000"),
+  `Fit Grade` = c("A+", "A+", "A")
+) %>%
+  kable(align = "clllr") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = TRUE, width = "2em") %>%
+  column_spec(3, width = "18em")
+```
+
+**Total portal spend: $3,800,000** ← Over the ~$2.3M remaining if committed
+costs are fixed. This means Kansas likely needs to revisit committed NIL for
+freshman #2 and #3, or find one player who accepts a team-friendly deal.
+*Alternate budget path: Carter + Davis only = $3.1M with roster creativity.*
+
+## Scenario B — Priority Order
+
+```{r recs_b}
+tibble(
+  Priority = c(1, 2, 3, 4),
+  Target = c("Johni Broome (PF/C, Auburn)",
+             "Devin Carter (PG, Providence)",
+             "Johnell Davis (SG, FAU)",
+             "Miles Byrd (SG/SF, SDSU)"),
+  Role = c("Anchor — elite post scorer + defensive anchor, replaces Bidunga",
+           "Lead guard — defensive PG, transition trigger",
+           "Scoring guard — off-ball creator, elite ORtg",
+           "3-and-D wing — SDSU defensive pedigree, athletic"),
+  NIL = c("$2,600,000", "$1,600,000", "$1,500,000", "$900,000"),
+  `Fit Grade` = c("A+", "A+", "A+", "A")
+) %>%
+  kable(align = "clllr") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = TRUE, width = "2em") %>%
+  column_spec(3, width = "18em")
+```
+
+**Total portal spend: $6,600,000** ← Well within the $7.6M portal budget.
+Leaves $1M for NIL retention adjustments or a 5th portal add if needed.
+
+---
+
+# Appendix: Full Portal Target Rankings
+
+```{r full_targets}
+portal_targets %>%
+  compute_tes() %>%
+  arrange(desc(TES)) %>%
+  mutate(
+    TES = round(TES, 3),
+    `NIL` = scales::dollar(nir_sal_est),
+    `TS%` = scales::percent(ts_pct, 0.1),
+    `3P%` = scales::percent(fg3_pct, 0.1),
+    `Fit` = self_fit,
+    Tier = value_tier
+  ) %>%
+  select(Rank = row_number(), Name = name, Pos = pos, Ht = ht,
+         School = from_school, ORtg = ortg, DRtg = drtg, BPM = bpm,
+         `TS%`, `3P%`, `NIL`, TES, Tier, `Fit`) %>%
+  kable(align = "rllllrrrrrlrrl") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 11) %>%
+  column_spec(2, bold = TRUE)
+```
+
+---
+
+*Generated by Kansas Basketball Analytics | `r Sys.Date()`*
+*Metrics: BartTorvik / EvanMiya frameworks | NIL estimates based on 2025-26 portal market data*
