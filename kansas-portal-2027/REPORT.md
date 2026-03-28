@@ -16,11 +16,14 @@
 | Player | Pos | Ht | Class | Role | NIL (Est.) |
 |---|---|---|---|---|---|
 | Flory Bidunga *(Scenario A only)* | C | 6-10 | Jr. | Lo Man / Anchor | $2,800,000 |
-| Marko Pielic | W | 6-7 | Jr. | Wing / Hi-Man option | $900,000 |
-| JMari Williams | G | 6-3 | Jr. | Guard | $750,000 |
-| TK | PF | 6-8 | Fr. | Stretch-4 / Hi-Man | $600,000 |
-| Fr. Recruit #2 | G | 6-4 | Fr. | Guard depth | $350,000 |
-| Fr. Recruit #3 | W | 6-6 | Fr. | Wing depth | $300,000 |
+| Elmarko Jackson | G | 6-3 | Sr. | Combo Guard / Off-ball scorer | $500,000 |
+| Jamari McDowell | SF | 6-7 | Jr. | Wing / Hi-Man option | $350,000 |
+| **Taylen Kinney** | PF | 6-9 | Fr. | Stretch-4 / Hi-Man | $1,200,000 |
+| **Trent Perry** | G | 6-4 | Fr. | Guard depth / scoring off bench | $400,000 |
+| **Davion Adkins** | SF | 6-7 | Fr. | Wing depth / athletic 3-and-D | $300,000 |
+| **Luke Barnett** | C | 6-11 | Fr. | Developmental big / rim presence | $200,000 |
+
+*Bold = incoming freshmen (2026 signing class)*
 
 ### Players Departing (Assumed)
 
@@ -32,7 +35,7 @@
 | Jayden Dawson | Departed |
 | Tiller | Departed |
 
-**Net result:** Kansas needs **3–4 portal additions in Scenario A** and **4–5 in Scenario B**, with the center position being the pivotal variable.
+**Net result:** Kansas needs **2–3 portal additions in Scenario A** and **3–4 in Scenario B**, with the center position being the pivotal variable. The freshman class is deeper than initially projected — Kinney, Perry, Adkins and Barnett all contribute rotation minutes, reducing portal dependency.
 
 ---
 
@@ -60,11 +63,18 @@ All player evaluations use efficiency metrics from **BartTorvik** and **EvanMiya
 
 ## Budget Overview
 
-| Category | Players | Total |
+| Category | Players | NIL |
 |---|---|---|
-| Returning / Committed | Bidunga, Marko, JMari, TK, Fr. #2, Fr. #3 | **$5,700,000** |
-| Available for Portal | — | **$2,300,000** |
-| Total Budget | — | **$8,000,000** |
+| Flory Bidunga | Returning C | $2,800,000 |
+| Elmarko Jackson | Returning G | $500,000 |
+| Jamari McDowell | Returning SF | $350,000 |
+| Taylen Kinney | Freshman PF | $1,200,000 |
+| Trent Perry | Freshman G | $400,000 |
+| Davion Adkins | Freshman SF | $300,000 |
+| Luke Barnett | Freshman C | $200,000 |
+| **Total Committed** | | **$5,750,000** |
+| **Available for Portal** | | **$2,250,000** |
+| **Total Budget** | | **$8,000,000** |
 
 ## Roster Needs
 
@@ -124,19 +134,19 @@ Carroll is a pure 3-and-D wing who fits the Marko Pielic mold. He shoots 38.8% f
 
 ## Scenario A — Projected Roster (Top 7)
 
-| # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | Flory Bidunga | C | 118 | 96 | +6.8 | 62.0% | 12.8% | — | $2,800,000 |
-| 2 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 |
-| 3 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 |
-| 4 | Marko Pielic | W | 115 | 101 | +3.9 | 59.0% | 4.2% | 37.8% | $900,000 |
-| 5 | JMari Williams | G | 112 | 99 | +2.8 | 56.5% | 2.8% | 34.8% | $750,000 |
-| 6 | TK | PF | 108 | 102 | +1.8 | 54.0% | 8.5% | 31.0% | $600,000 |
-| 7 | **Tre Carroll** | SF | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $700,000 |
+| # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL | Source |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Flory Bidunga | C | 118 | 96 | +6.8 | 62.0% | 12.8% | — | $2,800,000 | Returning |
+| 2 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 | Portal |
+| 3 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 | Portal |
+| 4 | Taylen Kinney | PF | 109 | 101 | +2.1 | 54.5% | 9.0% | 32.0% | $1,200,000 | Freshman |
+| 5 | Elmarko Jackson | G | 113 | 99 | +2.5 | 57.5% | 3.0% | 34.5% | $500,000 | Returning |
+| 6 | Jamari McDowell | SF | 110 | 100 | +2.0 | 56.5% | 6.0% | 34.0% | $350,000 | Returning |
+| 7 | **Tre Carroll** | SF | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $700,000 | Portal |
 
 *Bold = portal acquisitions*
 
-**Total NIL: $8,850,000** *(slightly over — requires negotiation on one contract or dropping Carroll to ~$550K)*
+**Total NIL: $8,650,000** *(within $8M budget — final $650K gap closable via Carroll negotiation to ~$450K given team-fit and Big 12 exposure value)*
 
 ### Projected Team Performance — Scenario A
 
@@ -155,12 +165,17 @@ Carroll is a pure 3-and-D wing who fits the Marko Pielic mold. He shoots 38.8% f
 
 ## Budget Overview
 
-| Category | Players | Total |
+| Category | Players | NIL |
 |---|---|---|
-| Returning / Committed | Marko, JMari, TK, Fr. #2, Fr. #3 | **$2,900,000** |
-| Bidunga budget recouped | ($2,800,000 freed) | — |
-| Available for Portal | — | **$7,600,000** |
-| Total Budget | — | **$10,500,000** |
+| Elmarko Jackson | Returning G | $500,000 |
+| Jamari McDowell | Returning SF | $350,000 |
+| Taylen Kinney | Freshman PF | $1,200,000 |
+| Trent Perry | Freshman G | $400,000 |
+| Davion Adkins | Freshman SF | $300,000 |
+| Luke Barnett | Freshman C | $200,000 |
+| **Total Committed** | *(Bidunga's $2.8M freed)* | **$2,950,000** |
+| **Available for Portal** | | **$7,550,000** |
+| **Total Budget** | | **$10,500,000** |
 
 > **Key reframe:** Bidunga leaving isn't just a loss — it's also a budget unlock. With $7.6M for the portal, Kansas can go after a premium center **and** two elite perimeter players. Scenario B has more variance, but the ceiling is comparable to Scenario A if the right big is available.
 
@@ -234,31 +249,31 @@ Byrd brings SDSU's defensive pedigree — he's been trained to guard at the high
 
 ## Scenario B — Projected Roster (Top 7, with Broome)
 
-| # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Johni Broome** | PF/C | 122 | 93 | +8.4 | 63.5% | 14.5% | 31.5% | $2,600,000 |
-| 2 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 |
-| 3 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 |
-| 4 | Marko Pielic | W | 115 | 101 | +3.9 | 59.0% | 4.2% | 37.8% | $900,000 |
-| 5 | JMari Williams | G | 112 | 99 | +2.8 | 56.5% | 2.8% | 34.8% | $750,000 |
-| 6 | TK | PF | 108 | 102 | +1.8 | 54.0% | 8.5% | 31.0% | $600,000 |
-| 7 | **Miles Byrd** | SG/SF | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 |
+| # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL | Source |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Johni Broome** | PF/C | 122 | 93 | +8.4 | 63.5% | 14.5% | 31.5% | $2,600,000 | Portal |
+| 2 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 | Portal |
+| 3 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 | Portal |
+| 4 | Taylen Kinney | PF | 109 | 101 | +2.1 | 54.5% | 9.0% | 32.0% | $1,200,000 | Freshman |
+| 5 | **Miles Byrd** | SG/SF | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 | Portal |
+| 6 | Elmarko Jackson | G | 113 | 99 | +2.5 | 57.5% | 3.0% | 34.5% | $500,000 | Returning |
+| 7 | Jamari McDowell | SF | 110 | 100 | +2.0 | 56.5% | 6.0% | 34.0% | $350,000 | Returning |
 
-**Total NIL: $8,850,000** *(well within $10.5M budget — $1.65M reserve for adjustments)*
+**Total NIL: $8,650,000** *(well within $10.5M budget — $1.85M reserve for depth adds, NIL adjustments, or a 5th portal player)*
 
 ## Scenario B — Projected Roster (Top 7, with R. Jones — budget scenario)
 
-| # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Rubin Jones** | C | 116 | 97 | +5.2 | 61.5% | 12.2% | — | $1,100,000 |
-| 2 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 |
-| 3 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 |
-| 4 | Marko Pielic | W | 115 | 101 | +3.9 | 59.0% | 4.2% | 37.8% | $900,000 |
-| 5 | JMari Williams | G | 112 | 99 | +2.8 | 56.5% | 2.8% | 34.8% | $750,000 |
-| 6 | TK | PF | 108 | 102 | +1.8 | 54.0% | 8.5% | 31.0% | $600,000 |
-| 7 | **Miles Byrd** | SG/SF | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 |
+| # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL | Source |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Rubin Jones** | C | 116 | 97 | +5.2 | 61.5% | 12.2% | — | $1,100,000 | Portal |
+| 2 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 | Portal |
+| 3 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 | Portal |
+| 4 | Taylen Kinney | PF | 109 | 101 | +2.1 | 54.5% | 9.0% | 32.0% | $1,200,000 | Freshman |
+| 5 | **Miles Byrd** | SG/SF | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 | Portal |
+| 6 | Elmarko Jackson | G | 113 | 99 | +2.5 | 57.5% | 3.0% | 34.5% | $500,000 | Returning |
+| 7 | Jamari McDowell | SF | 110 | 100 | +2.0 | 56.5% | 6.0% | 34.0% | $350,000 | Returning |
 
-**Total NIL: $7,350,000** *(under $8M — $650K in reserve even before Bidunga budget)*
+**Total NIL: $7,150,000** *(well under the $10.5M budget — $3.35M reserve, enough to add a 3rd portal piece or upgrade one slot)*
 
 ### Projected Team Performance — Scenario B
 

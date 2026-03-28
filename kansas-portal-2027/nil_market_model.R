@@ -123,24 +123,48 @@ source("player_data.R")
 
 # Manually code program tiers for our target list
 program_tiers <- tribble(
-  ~name,                  ~prog_tier,      ~yr_remaining,
-  "Kam Jones",            "power4_star",   2,
-  "Johni Broome",         "power4_star",   1,  # likely 1 yr left / NBA
-  "Rubin Jones",          "mid_major",     2,
-  "Darius Acuff Jr.",     "power4",        2,
-  "Zach Edey (grad equiv)","power4_star",  1,
-  "Brandon Garrison",     "power4",        3,
-  "RJ Luis Jr.",          "power4_star",   2,
-  "Tre Carroll",          "mid_major",     2,
-  "Miles Byrd",           "power4",        2,
-  "Adou Thiero",          "power4",        2,
-  "Boogie Fland",         "power4",        2,
-  "Devin Carter",         "power4",        2,
-  "Johnell Davis",        "mid_major",     2,  # KEY: mid-major star = underpriced
-  "Tre Johnson",          "power4_star",   2,
-  "Tamar Bates",          "power4",        2,
-  "Nijel Pack",           "mid_major",     2,
-  "CJ Fredrick",          "power4",        1
+  ~name,                      ~prog_tier,      ~yr_remaining,
+  # Bigs
+  "Johni Broome",             "power4_star",   1,   # NBA candidate; 1 yr left if returns
+  "Kam Jones",                "power4_star",   2,
+  "Felix Okpara",             "power4",        2,
+  "Trevon Brazile",           "power4",        2,
+  "Malik Reneau",             "power4",        2,
+  "Rubin Jones",              "mid_major",     2,   # mid-major discount = undervalue
+  "Fousseyni Traore",         "power4",        2,
+  "Darius Acuff Jr.",         "power4",        2,
+  "Braxton Meah",             "mid_major",     3,
+  "Yanic Konan Niederhauser", "mid_major",     2,
+  "Brandon Garrison",         "power4",        3,
+  "Aday Mara",                "mid_major",     3,
+  "Thomas Haugh",             "power4_star",   2,
+  # Wings / Forwards
+  "RJ Luis Jr.",              "power4_star",   2,
+  "Cam Christie",             "power4",        2,
+  "Kobe Johnson",             "power4",        2,
+  "Miles Byrd",               "power4",        2,
+  "Jaxson Robinson",          "power4",        2,
+  "Adou Thiero",              "power4",        2,
+  "Andrej Stojakovic",        "power4",        2,
+  "Keshad Johnson",           "power4_star",   2,
+  "Silas Demary Jr.",         "power4",        2,
+  "Tre Carroll",              "mid_major",     2,
+  "Boogie Fland",             "power4",        2,
+  # Guards
+  "Devin Carter",             "power4",        2,
+  "Johnell Davis",            "mid_major",     2,   # KEY: mid-major star = underpriced
+  "RJ Davis",                 "power4_star",   1,   # veteran, 1 yr remaining
+  "Chucky Hepburn",           "power4",        1,
+  "Dug McDaniel",             "power4",        2,
+  "Jeremiah Fears",           "power4",        3,
+  "Ian Jackson",              "power4_star",   3,
+  "Elliot Cadeau",            "power4_star",   3,
+  "Javian McCollum",          "power4",        2,
+  "Caleb Love",               "power4_star",   1,
+  "Tamar Bates",              "power4",        2,
+  "Nijel Pack",               "mid_major",     2,
+  "Tre Johnson",              "power4_star",   2,
+  "CJ Fredrick",              "power4",        1
 )
 
 nil_estimates <- portal_targets %>%
