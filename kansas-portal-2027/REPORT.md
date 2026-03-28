@@ -126,7 +126,7 @@ The reason he's underpriced: he plays at FAU. Mid-major exposure discount means 
 |---|---|---|---|---|---|
 | 115 | 99 | +3.8 | 58.5% | 38.8% | 50% |
 
-Carroll is a pure 3-and-D wing who fits the Marko Pielic mold. He shoots 38.8% from three at a very high rate — essentially half his shots are threes — which stretches the floor exactly how Self needs it for Hi-Lo spacing. His defensive metrics are solid and he's versatile enough to guard 2–4. At $700K he is high value per dollar.
+Carroll is a pure 3-and-D wing — he shoots 38.8% from three at a very high rate (essentially half his shots are threes), which gives Self the floor spacing Hi-Lo requires. His defensive metrics are solid and he's versatile enough to guard 2–4. In a rotation where Taylen Kinney provides the stretch-4 punch, Carroll slots in as the 3-man. At $700K he is high value per dollar.
 
 **Fit grade: A** | **Value tier: Value**
 
@@ -187,7 +187,7 @@ Carroll is a pure 3-and-D wing who fits the Marko Pielic mold. He shoots 38.8% f
 | 2 | Lead Guard (PG) | Same as Scenario A |
 | 3 | Scoring Guard (SG) | Same as Scenario A |
 | 4 | Wing / SF | Same as Scenario A |
-| 5 | TK at Hi-Man? | TK's stretch-4 skill set could move up if the center is dominant inside |
+| 5 | Taylen Kinney at Hi-Man? | Kinney's stretch-4 skill set could step into the Hi-Man role if the center acquisition is dominant enough inside |
 
 ## Recommended Portal Targets — Scenario B
 
@@ -295,7 +295,7 @@ Byrd brings SDSU's defensive pedigree — he's been trained to guard at the high
 | **Net Rating** | +21.1 | **+22.8** | +20.3 |
 | **KenPom Range** | Top 5–10 | **Top 3–8** | Top 10–18 |
 | **ORB Rate** | 8.9% | **9.4%** | 8.8% |
-| **NIL Spend** | ~$8.9M | ~$8.9M | **~$7.4M** |
+| **NIL Spend** | ~$8.7M | ~$8.7M | **~$7.2M** |
 | **Budget Efficiency** | Good | Good | **Best** |
 | **Risk** | Low | Medium (Broome NBA?) | **Low** |
 
@@ -321,26 +321,63 @@ These players are analytically identified as likely underpriced relative to thei
 
 # Full Portal Target Rankings
 
-*Ranked by Team Efficiency Score (TES) — optimized for Bill Self's Hi-Lo system*
+*Ranked by Team Efficiency Score (TES) — composite weighted for Bill Self's Hi-Lo system (defense 30%, offense 25%, TS% 15%, ORB% 15%, BPM 10%, 3P% 5%). All players treated as available.*
 
-| Rank | Player | Pos | School | ORtg | DRtg | BPM | TS% | 3P% | NIL Est. | System Fit | Tier |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Johni Broome | PF/C | Auburn | 122 | 93 | +8.4 | 63.5% | 31.5% | $2,600,000 | A+ | Premium |
-| 2 | Johnell Davis | SG | FAU | 121 | 97 | +6.8 | 62.5% | 37.2% | $1,500,000 | A+ | **Undervalued** |
-| 3 | Devin Carter | PG | Providence | 119 | 95 | +6.2 | 61.0% | 35.8% | $1,600,000 | A+ | Premium |
-| 4 | Kam Jones | C | Marquette | 120 | 95 | +7.1 | 63.0% | — | $2,200,000 | A+ | Premium |
-| 5 | RJ Luis Jr. | SF | UConn | 118 | 96 | +5.5 | 60.0% | 36.2% | $1,400,000 | A+ | Premium |
-| 6 | Tre Johnson | SG | Texas | 118 | 100 | +5.1 | 61.8% | 36.8% | $2,000,000 | A | Premium |
-| 7 | Rubin Jones | C | Cincinnati | 116 | 97 | +5.2 | 61.5% | — | $1,100,000 | A+ | **Undervalued** |
-| 8 | Miles Byrd | SG/SF | SDSU | 116 | 97 | +4.4 | 59.8% | 37.5% | $900,000 | A | Value |
-| 9 | Boogie Fland | SG | Arkansas | 117 | 98 | +4.9 | 59.5% | 36.0% | $1,200,000 | A | Value |
-| 10 | Nijel Pack | PG | Miami | 116 | 98 | +4.2 | 60.0% | 38.5% | $900,000 | A | **Undervalued** |
-| 11 | Darius Acuff Jr. | PF | Tennessee | 114 | 98 | +4.1 | 59.0% | 34.0% | $950,000 | A | Value |
-| 12 | Tamar Bates | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | $750,000 | A | Value |
-| 13 | Tre Carroll | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 38.8% | $700,000 | A | **Undervalued** |
-| 14 | Adou Thiero | SF | Arkansas | 112 | 100 | +2.9 | 57.0% | 34.2% | $550,000 | A | Deep Value |
-| 15 | CJ Fredrick | SG | Iowa | 118 | 100 | +3.8 | 61.8% | 41.5% | $600,000 | B+ | Deep Value |
-| 16 | Brandon Garrison | C | Michigan | 113 | 100 | +3.8 | 58.0% | — | $800,000 | A | Deep Value |
+> **Tier key:** ⭐ Undervalued (analytically priced below market) | Premium | Value | Deep Value
+
+### Centers & Power Forwards
+
+| Rank | Player | Pos | School | ORtg | DRtg | BPM | TS% | ORB% | Blk% | NIL Est. | Fit | Tier |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Johni Broome | PF/C | Auburn | 122 | 93 | +8.4 | 63.5% | 14.5% | 9.5% | $2,600,000 | A+ | Premium |
+| 2 | Kam Jones | C | Marquette | 120 | 95 | +7.1 | 63.0% | 13.8% | 12.0% | $2,200,000 | A+ | Premium |
+| 3 | Felix Okpara | C | Ohio State | 115 | 94 | +5.6 | 59.0% | 11.8% | 13.5% | $1,400,000 | A+ | Value |
+| 4 | Rubin Jones | C | Cincinnati | 116 | 97 | +5.2 | 61.5% | 12.2% | 10.8% | $1,100,000 | A+ | ⭐ Undervalued |
+| 5 | Trevon Brazile | PF | Arkansas | 116 | 97 | +5.0 | 59.5% | 12.0% | 8.0% | $1,200,000 | A+ | Value |
+| 6 | Malik Reneau | PF | Indiana | 117 | 98 | +4.8 | 60.0% | 10.5% | 5.5% | $1,100,000 | A+ | Value |
+| 7 | Darius Acuff Jr. | PF | Tennessee | 114 | 98 | +4.1 | 59.0% | 9.8% | 6.2% | $950,000 | A | Value |
+| 8 | Yanic Konan Niederhauser | C | Utah State | 112 | 98 | +4.2 | 58.5% | 11.2% | 11.8% | $800,000 | A | ⭐ Undervalued |
+| 9 | Thomas Haugh | PF | Duke | 113 | 99 | +3.5 | 58.2% | 8.5% | 4.2% | $900,000 | A | Value |
+| 10 | Fousseyni Traore | PF/C | Minnesota | 113 | 98 | +4.0 | 57.5% | 13.0% | 7.5% | $850,000 | A | Value |
+| 11 | Brandon Garrison | C | Michigan | 113 | 100 | +3.8 | 58.0% | 11.0% | 9.5% | $800,000 | A | Deep Value |
+| 12 | Braxton Meah | C | Washington | 110 | 100 | +3.2 | 57.0% | 10.8% | 10.5% | $700,000 | A | ⭐ Undervalued |
+| 13 | Aday Mara | C | Charlotte | 108 | 101 | +3.0 | 55.5% | 9.8% | 12.5% | $550,000 | B+ | Deep Value |
+
+### Wings & Small Forwards
+
+| Rank | Player | Pos | School | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL Est. | Fit | Tier |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | RJ Luis Jr. | SF | UConn | 118 | 96 | +5.5 | 60.0% | 6.2% | 36.2% | $1,400,000 | A+ | Premium |
+| 2 | Miles Byrd | SG/SF | SDSU | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 | A | ⭐ Undervalued |
+| 3 | Boogie Fland | SG | Arkansas | 117 | 98 | +4.9 | 59.5% | 3.5% | 36.0% | $1,200,000 | A | Value |
+| 4 | Cam Christie | SF | UCLA | 115 | 98 | +4.0 | 59.0% | 5.0% | 37.8% | $950,000 | A | Value |
+| 5 | Kobe Johnson | SF | USC | 113 | 97 | +3.6 | 57.8% | 5.5% | 35.5% | $800,000 | A | Value |
+| 6 | Keshad Johnson | SG/SF | Arizona | 113 | 98 | +3.2 | 57.5% | 5.2% | 35.2% | $700,000 | A | Value |
+| 7 | Jaxson Robinson | SG/SF | Arkansas | 114 | 99 | +3.5 | 58.8% | 4.5% | 37.2% | $750,000 | A | Value |
+| 8 | Andrej Stojakovic | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 3.8% | 39.0% | $800,000 | A | ⭐ Undervalued |
+| 9 | Tre Carroll | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $700,000 | A | ⭐ Undervalued |
+| 10 | Adou Thiero | SF | Arkansas | 112 | 100 | +2.9 | 57.0% | 6.8% | 34.2% | $550,000 | A | Deep Value |
+| 11 | Silas Demary Jr. | SG/SF | Georgia Tech | 114 | 101 | +3.0 | 58.0% | 4.2% | 35.8% | $650,000 | A | Deep Value |
+
+### Guards
+
+| Rank | Player | Pos | School | ORtg | DRtg | BPM | TS% | 3P% | Stl% | NIL Est. | Fit | Tier |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Johnell Davis | SG | FAU | 121 | 97 | +6.8 | 62.5% | 37.2% | 2.8% | $1,500,000 | A+ | ⭐ Undervalued |
+| 2 | Devin Carter | PG | Providence | 119 | 95 | +6.2 | 61.0% | 35.8% | 3.0% | $1,600,000 | A+ | Premium |
+| 3 | Tre Johnson | SG | Texas | 118 | 100 | +5.1 | 61.8% | 36.8% | 1.8% | $2,000,000 | A | Premium |
+| 4 | RJ Davis | G | North Carolina | 118 | 98 | +4.8 | 60.8% | 37.8% | 2.4% | $1,300,000 | A | Premium |
+| 5 | Ian Jackson | SG | North Carolina | 117 | 99 | +4.5 | 60.0% | 36.2% | 2.0% | $1,100,000 | A | Value |
+| 6 | Chucky Hepburn | PG | Wisconsin | 115 | 97 | +4.0 | 59.2% | 36.5% | 2.8% | $1,000,000 | A+ | Value |
+| 7 | Nijel Pack | PG | Miami | 116 | 98 | +4.2 | 60.0% | 38.5% | 2.6% | $900,000 | A | ⭐ Undervalued |
+| 8 | Dug McDaniel | PG | Michigan | 116 | 99 | +3.8 | 58.8% | 35.2% | 2.6% | $900,000 | A | Value |
+| 9 | Jeremiah Fears | G | Oklahoma | 115 | 100 | +3.5 | 58.5% | 34.5% | 2.2% | $950,000 | A | Value |
+| 10 | Tamar Bates | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 2.0% | $750,000 | A | Value |
+| 11 | Caleb Love | SG | Arizona | 115 | 101 | +3.2 | 58.2% | 35.2% | 1.8% | $1,200,000 | A | Premium |
+| 12 | Javian McCollum | G | South Carolina | 116 | 100 | +3.6 | 59.2% | 35.8% | 2.2% | $750,000 | B+ | Value |
+| 13 | Elliot Cadeau | PG | North Carolina | 113 | 99 | +3.0 | 57.8% | 33.8% | 2.6% | $800,000 | A | Value |
+| 14 | CJ Fredrick | SG | Iowa | 118 | 100 | +3.8 | 61.8% | 41.5% | 1.4% | $600,000 | B+ | ⭐ Undervalued |
+| 15 | Andrej Stojakovic | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 39.0% | 1.6% | $800,000 | A | ⭐ Undervalued |
 
 ---
 
