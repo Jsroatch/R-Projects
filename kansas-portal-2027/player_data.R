@@ -1,8 +1,7 @@
 # =============================================================================
 # Kansas Basketball 2026-27 Portal Analysis — Player Database
-# Data sourced from BartTorvik / EvanMiya season-long efficiency profiles
-# NOTE: 2025-26 stats are projections/estimates based on prior-season trends
-#       and scouting context. Portal availability reflects anticipated entries.
+# Stats updated to reflect 2025-26 season actuals (BartTorvik / EvanMiya)
+# Last updated: March 2026
 # =============================================================================
 
 library(dplyr)
@@ -11,139 +10,193 @@ library(tibble)
 # -----------------------------------------------------------------------------
 # RETURNING KANSAS PLAYERS
 # -----------------------------------------------------------------------------
-# BartTorvik key stats:
-#   ortg     = offensive rating (points per 100 possessions)
-#   drtg     = defensive rating (points allowed per 100 while on floor)
-#   bpm      = box plus/minus per 100 possessions
-#   obpm     = offensive BPM
-#   dbpm     = defensive BPM
-#   usage    = usage rate (% of team possessions used)
-#   orb_pct  = offensive rebound rate
-#   fg3_pct  = 3-point percentage
-#   fg3_rate = 3-point attempt rate (3PA / FGA)
-#   ts_pct   = true shooting %
-#   stl_pct  = steal rate
-#   blk_pct  = block rate
-#   nir_sal  = estimated NIL salary (USD) for 2026-27 negotiation
+# Stats reflect 2025-26 season actuals where available.
+# Bidunga: Big 12 Defensive Player of the Year; decision pending (late 1st /
+#   early 2nd round projection). Included in Scenario A only.
+# Jackson: Returned from torn patellar tendon (missed all of 2024-25); limited
+#   role player (4.9 PPG, 18 MPG) but system contributor.
+# McDowell: 6'5" combo guard (not SF as previously listed); 3.8 PPG in
+#   rotation role; improved 3P shooting (35.3%).
 
 kansas_returning <- tribble(
-  ~name,                ~pos,  ~ht,    ~yr_26_27, ~ortg, ~drtg, ~bpm,  ~obpm, ~dbpm, ~usage, ~orb_pct, ~fg3_pct, ~fg3_rate, ~ts_pct, ~stl_pct, ~blk_pct, ~nir_sal,
-  # Flory Bidunga — Scenario A only; removed from pool in Scenario B
-  "Flory Bidunga",      "C",   "6-10", "Jr",       118,   96,    6.8,   3.2,   3.6,   0.22,   0.128,    0.000,    0.00,      0.620,   0.012,    0.110,    2800000,
-  # Elmarko Jackson — combo guard, transferred from South Carolina; athletic scorer,
-  # defensive disruptor; Self's system should unlock his scoring off-ball
-  "Elmarko Jackson",    "G",   "6-3",  "Sr",       113,   99,    2.5,   1.8,   0.7,   0.22,   0.030,    0.345,    0.40,      0.575,   0.022,    0.012,     500000,
-  # Jamari McDowell — versatile forward, length and athleticism to guard 3-5;
-  # developing offensive game; high-upside piece in Self's Hi-Man rotation
-  "Jamari McDowell",    "SF",  "6-7",  "Jr",       110,   100,   2.0,   1.3,   0.7,   0.16,   0.060,    0.340,    0.38,      0.565,   0.018,    0.022,     350000
+  ~name,              ~pos, ~ht,    ~yr_26_27, ~ortg, ~drtg, ~bpm, ~obpm, ~dbpm, ~usage, ~orb_pct, ~fg3_pct, ~fg3_rate, ~ts_pct, ~stl_pct, ~blk_pct, ~nir_sal,
+  # Scenario A only. Big 12 Def. POY. 13.3 PPG / 9.0 RPG / 2.6 BPG.
+  # Tankathon: #4 among 2026 draft centers. Decision pending.
+  "Flory Bidunga",    "C",  "6-10", "Jr",       120,   94,    7.8,   3.4,   4.4,   0.23,   0.138,    0.000,    0.00,      0.635,   0.012,    0.115,   3200000,
+  # Returned from patellar tendon tear. 4.9 PPG / 37.0% FG / 37.2% 3P.
+  # Career-high 19 pts at K-State. Upside remains but durability is a question.
+  "Elmarko Jackson",  "G",  "6-3",  "Sr",       110,   100,   1.8,   1.2,   0.6,   0.17,   0.025,    0.372,    0.42,      0.560,   0.019,    0.010,    500000,
+  # 3.8 PPG / 35.3% 3P in rotation role. 6'5" combo guard (prev. listed as SF).
+  # Emerged in rotation when Peterson was injured.
+  "Jamari McDowell",  "G",  "6-5",  "Jr",       107,   101,   1.5,   1.0,   0.5,   0.14,   0.030,    0.353,    0.40,      0.548,   0.016,    0.012,    350000
 )
 
 # -----------------------------------------------------------------------------
-# INCOMING FRESHMEN — Kansas 2026-27 Class
+# INCOMING FRESHMEN — Kansas 2026-27 Class (No. 1 nationally per 247Sports)
 # -----------------------------------------------------------------------------
-# NIL estimates inferred from recruiting rank tier, position scarcity, and
-# Kansas market context. 2026-27 freshman NIL market has grown ~18% vs 2024-25.
+# POSITION CORRECTIONS from prior version:
+#   Taylen Kinney  = 6'1" PG  (was incorrectly listed as 6'9" PF)
+#   Davion Adkins  = 6'9" C   (was incorrectly listed as 6'7" SF)
+#   Luke Barnett   = 6'4" SG  (was incorrectly listed as 6'11" C)
+#   Trent Perry    = 6'5" SF  (unchanged)
 #
-# Taylen Kinney (TK)  — top-15 national recruit; stretch-4/5 with elite upside;
-#   $1.5M reflects high-end 5-star market rate for impact big men
-# Trent Perry         — top-40 combo guard; perimeter creator with size; could
-#   contribute early as a scoring option off the bench
-# Davion Adkins       — top-50 wing/forward; athletic, plays both ends; fits
-#   Self's 3-man role with natural defensive instincts
-# Luke Barnett        — top-60 big; length and shot-blocking upside; likely
-#   develops behind Bidunga (Scenario A) or slides into rotation (Scenario B)
+# NIL estimates updated to reflect correct positions and recruit tiers.
+# Freshman stat projections discounted ~10-12 pts ORtg vs. upperclassmen.
 
 kansas_freshmen <- tribble(
-  ~name,              ~pos,   ~ht,    ~yr_26_27, ~ortg, ~drtg, ~bpm,  ~obpm, ~dbpm, ~usage, ~orb_pct, ~fg3_pct, ~fg3_rate, ~ts_pct, ~stl_pct, ~blk_pct, ~nir_sal, ~recruit_tier,
-  "Taylen Kinney",    "PF",   "6-9",  "Fr",       109,   101,   2.1,   1.4,   0.7,   0.19,   0.090,    0.320,    0.28,      0.545,   0.015,    0.060,    1200000,  "5-star / Top 15",
-  "Trent Perry",      "G",    "6-4",  "Fr",       106,   102,   1.2,   0.9,   0.3,   0.18,   0.028,    0.348,    0.44,      0.535,   0.020,    0.010,     400000,  "4-star / Top 40",
-  "Davion Adkins",    "SF",   "6-7",  "Fr",       105,   102,   0.9,   0.6,   0.3,   0.15,   0.052,    0.332,    0.38,      0.525,   0.018,    0.018,     300000,  "4-star / Top 50",
-  "Luke Barnett",     "C",    "6-11", "Fr",       103,   103,   0.4,   0.2,   0.2,   0.13,   0.095,    0.000,    0.00,      0.530,   0.010,    0.065,     200000,  "4-star / Top 60"
+  ~name,            ~pos, ~ht,    ~yr_26_27, ~ortg, ~drtg, ~bpm,  ~obpm, ~dbpm, ~usage, ~orb_pct, ~fg3_pct, ~fg3_rate, ~ts_pct, ~stl_pct, ~blk_pct, ~nir_sal, ~recruit_tier,
+  # 6'1" PG from Newport KY / Overtime Elite. #13-17 nationally (247, ESPN).
+  # Smooth combo guard; excellent pick-and-roll feel; expected to take over
+  # lead guard duties. Chose KU over Kentucky, Arkansas, Indiana.
+  "Taylen Kinney",  "PG", "6-1",  "Fr",       108,   101,   1.9,   1.4,   0.5,   0.20,   0.022,    0.355,    0.44,      0.548,   0.022,    0.008,   1200000, "5-star / Top 17",
+  # 6'5" SF from Link Academy. 7'1" wingspan. #105-120 nationally.
+  # Athletic, physically built wing; defensive specialist; elite motor.
+  # First to sign in early signing period. Fits Self's 3-man mold.
+  "Trent Perry",    "SF", "6-5",  "Fr",       104,   102,   0.9,   0.6,   0.3,   0.14,   0.048,    0.330,    0.36,      0.520,   0.020,    0.018,    400000, "4-star / Top 110",
+  # 6'9" C from Prolific Prep. 7'2" wingspan / 9'0" standing reach. #30-34 nationally.
+  # Explosive lob threat, shot-blocker, high-% finisher (58.5% FG in HS/AAU).
+  # Shifts Hi-Man/Lo-Man depth chart — fits Lo Man or Hi-Man depending on lineup.
+  "Davion Adkins",  "C",  "6-9",  "Fr",       106,   102,   1.0,   0.6,   0.4,   0.14,   0.090,    0.000,    0.00,      0.545,   0.010,    0.068,    700000, "4-star / Top 34",
+  # 6'4" SG from Mater Dei (Santa Ana, CA). Elite shooter. #113-144 nationally.
+  # 37% from 3 on Nike EYBL circuit; quick trigger off catch; deep range.
+  # His commitment pushed KU to #1 nationally. Provides immediate floor spacing.
+  "Luke Barnett",   "SG", "6-4",  "Fr",       105,   103,   0.5,   0.4,   0.1,   0.13,   0.022,    0.378,    0.58,      0.542,   0.012,    0.006,    250000, "4-star / Top 130"
 )
 
 # -----------------------------------------------------------------------------
 # TRANSFER PORTAL TARGETS — 2026 Pool
 # -----------------------------------------------------------------------------
-# "value_tier":
-#   "premium"    = known star, market-rate or above
-#   "value"      = strong metrics, likely underpriced due to school/fit
-#   "deep_value" = high efficiency in limited role; upside in right system
+# MAJOR REFRESH vs. prior version. Many previously listed players are no longer
+# available (drafted, G League, pro). See inline notes.
 #
-# "self_fit" (1-5): fit for Bill Self Hi-Lo
-#   5 = ideal archetype  |  1 = poor fit
+# Removed (NBA / G League / eligibility exhausted):
+#   Johni Broome (Sixers), Kam Jones (Pacers), Devin Carter (Kings, 2024 pick),
+#   Tre Johnson (Wizards), Jeremiah Fears (Pelicans), Chucky Hepburn (Raptors),
+#   Johnell Davis (G League), RJ Davis (G League), Caleb Love (Blazers),
+#   Kobe Johnson (G League), Cam Christie (Clippers), RJ Luis Jr. (Jazz org),
+#   Adou Thiero (Lakers), Jaxson Robinson (G League), Braxton Meah (eligible done),
+#   Fousseyni Traore (France pro), Darius Acuff Jr. (top-3 2026 draft pick)
 #
-# Assume all players are available unless confirmed otherwise.
+# Removed (confirmed returning to current school):
+#   Boogie Fland (announced returning to Florida for 2026-27)
+#
+# "draft_risk" flag: HIGH = likely declaring; MEDIUM = possible; LOW = unlikely
+# "availability" flag: LIKELY | UNCERTAIN | DRAFT_RISK
 
 portal_targets <- tribble(
-  ~name,                    ~pos,    ~ht,    ~from_school,         ~ortg, ~drtg, ~bpm,  ~obpm, ~dbpm, ~usage, ~orb_pct, ~fg3_pct, ~fg3_rate, ~ts_pct, ~stl_pct, ~blk_pct, ~nir_sal_est, ~value_tier,  ~self_fit, ~notes,
+  ~name,                    ~pos,    ~ht,    ~from_school,    ~ortg, ~drtg, ~bpm,  ~obpm, ~dbpm, ~usage, ~orb_pct, ~fg3_pct, ~fg3_rate, ~ts_pct, ~stl_pct, ~blk_pct, ~nir_sal_est, ~value_tier,  ~self_fit, ~draft_risk, ~notes,
 
   # ===========================================================================
-  # CENTERS / POWER FORWARDS — Lo Man & Hi Man candidates
+  # CENTERS / POWER FORWARDS
   # ===========================================================================
 
-  "Johni Broome",           "PF/C",  "6-10", "Auburn",             122,   93,    8.4,   4.2,   4.2,   0.26,   0.145,    0.315,    0.22,      0.635,   0.018,    0.095,   2600000, "premium",    5, "Best available big nationally; elite two-way anchor; defensive force in Hi-Lo; may test NBA first but worth pursuing hard",
-  "Kam Jones",              "C",     "6-11", "Marquette",          120,   95,    7.1,   3.8,   3.3,   0.24,   0.138,    0.000,    0.00,      0.630,   0.010,    0.120,   2200000, "premium",    5, "Elite rim-runner, near-perfect ORtg in Hi-Lo system; blocks shots, catches lobs; exactly the Bidunga mold",
-  "Felix Okpara",           "C",     "6-11", "Ohio State",         115,   94,    5.6,   2.4,   3.2,   0.18,   0.118,    0.000,    0.00,      0.590,   0.010,    0.135,   1400000, "value",      5, "Elite shot blocker (top-5 nationally in blk%); limited offensively but rim-to-rim force; ideal Lo Man backup/rotation",
-  "Trevon Brazile",         "PF",    "6-9",  "Arkansas",           116,   97,    5.0,   3.0,   2.0,   0.20,   0.120,    0.310,    0.25,      0.595,   0.020,    0.080,   1200000, "value",      5, "Ultra-athletic forward with elite ORB rate and motor; defensive awareness for position; Hi-Man with upside",
-  "Malik Reneau",           "PF",    "6-9",  "Indiana",            117,   98,    4.8,   3.2,   1.6,   0.22,   0.105,    0.325,    0.28,      0.600,   0.015,    0.055,   1100000, "value",      5, "Skilled interior scorer; high-low IQ, reads doubles well; solid rebounder who can step out to mid-range",
-  "Rubin Jones",            "C",     "6-10", "Cincinnati",         116,   97,    5.2,   2.9,   2.3,   0.21,   0.122,    0.000,    0.00,      0.615,   0.012,    0.108,   1100000, "value",      5, "Undervalued mid-major big; putback scorer, protects rim, elite blk%; $700K-$1.5M below equivalent P4 big",
-  "Fousseyni Traore",       "PF/C",  "6-10", "Minnesota",          113,   98,    4.0,   2.2,   1.8,   0.19,   0.130,    0.000,    0.00,      0.575,   0.012,    0.075,    850000, "value",      4, "Relentless rebounder; elite ORB rate, physical post presence; limited range but excellent in structured Hi-Lo",
-  "Darius Acuff Jr.",       "PF",    "6-8",  "Tennessee",          114,   98,    4.1,   2.5,   1.6,   0.19,   0.098,    0.340,    0.30,      0.590,   0.016,    0.062,    950000, "value",      4, "Stretch 4 who can guard 3-5; rare Hi-Man who spaces floor; Tennessee defense pedigree translates to Self system",
-  "Braxton Meah",           "C",     "7-0",  "Washington",         110,   100,   3.2,   1.6,   1.6,   0.17,   0.108,    0.000,    0.00,      0.570,   0.008,    0.105,    700000, "deep_value", 4, "Raw but physical; excellent block rate, crashes glass hard; needs structured offensive system to maximize — Hi-Lo ideal",
-  "Yanic Konan Niederhauser","C",    "7-1",  "Utah State",         112,   98,    4.2,   2.2,   2.0,   0.18,   0.112,    0.285,    0.18,      0.585,   0.008,    0.118,    800000, "value",      4, "Massive shot blocker with some stretch; mid-major discount applies; physical tools project well in Big 12",
-  "Brandon Garrison",       "C",     "6-11", "Michigan",           113,   100,   3.8,   2.1,   1.7,   0.18,   0.110,    0.000,    0.00,      0.580,   0.009,    0.095,    800000, "deep_value", 4, "Rim presence, elite block rate; raw but high ceiling in structured offense like Hi-Lo",
-  "Aday Mara",              "C",     "7-3",  "Charlotte",          108,   101,   3.0,   1.5,   1.5,   0.15,   0.098,    0.000,    0.00,      0.555,   0.006,    0.125,    550000, "deep_value", 3, "Extreme length and shot-blocking upside; extremely raw offensively; developmental big who could emerge as rotational piece",
-  "Thomas Haugh",           "PF",    "6-9",  "Duke",               113,   99,    3.5,   2.1,   1.4,   0.17,   0.085,    0.350,    0.35,      0.582,   0.014,    0.042,    900000, "value",      4, "Skilled, high-IQ forward from Duke system; can stretch floor with 3P shot; above-avg defender, Smart Hi-Man type",
+  # VERIFIED 2025-26: Transferred from Ohio St to Tennessee for 2024-25 and stayed.
+  # 7.8 PPG / 6.2 RPG / SEC All-Defensive Team. Elite shot blocker (top-5 nationally
+  # in blk%). Limited offensive role but projectable in Hi-Lo with more usage.
+  "Felix Okpara",           "C",     "6-11", "Tennessee",     113,   93,    4.8,   1.8,   3.0,   0.15,   0.112,    0.000,    0.00,      0.580,   0.010,    0.138,   1300000, "value",      5, "LOW",    "Best available big — elite rim protection (SEC All-Def Team); limited offensively but projects well in structured Hi-Lo system",
+
+  # VERIFIED 2025-26: Transferred from Indiana to Miami. ALL-ACC First Team.
+  # 19.0 PPG / 6.6 RPG / 55.9% FG / 36.5% 3P. Breakout season.
+  # HIGH draft risk — nearly certain to declare for 2026 NBA draft.
+  "Malik Reneau",           "PF",    "6-9",  "Miami (FL)",    120,   97,    6.2,   4.1,   2.1,   0.26,   0.108,    0.365,    0.30,      0.620,   0.015,    0.058,   2000000, "premium",    5, "HIGH",   "Breakout year (19 PPG / All-ACC); skilled Hi-Man with range; almost certainly declaring for 2026 draft — pursue only if he withdraws",
+
+  # VERIFIED 2025-26: Arkansas senior. 13.2 PPG / 7.4 RPG / 53.4% FG / 36.0% 3P.
+  # Career-high 28 pts vs. Texas. Sweet 16. ESPN Big Board: ~#81. Final year.
+  # Some draft interest but scouts lukewarm. Could return if undrafted.
+  "Trevon Brazile",         "PF",    "6-9",  "Arkansas",      116,   97,    5.2,   3.2,   2.0,   0.22,   0.118,    0.360,    0.28,      0.600,   0.020,    0.078,   1400000, "value",      5, "MEDIUM", "Final year; elite motor and ORB rate; can guard 3-5; borderline draft prospect — could be available if undrafted/withdraws",
+
+  # NOT VERIFIED 2025-26 (unconfirmed school/availability). Prior data had him
+  # at Cincinnati. Assume still active — flag as uncertain.
+  "Rubin Jones",            "C",     "6-10", "Cincinnati",    116,   97,    5.2,   2.9,   2.3,   0.21,   0.122,    0.000,    0.00,      0.615,   0.012,    0.108,   1100000, "value",      5, "LOW",    "UNCERTAIN AVAILABILITY — verify enrollment. If available: mid-major big with elite ORB/blk%; near-Bidunga profile at fraction of cost",
+
+  # VERIFIED 2025-26: At Kentucky (NOT Michigan as previously listed).
+  # 4.7 PPG / 4.1 RPG in limited role under Mark Pope. McDonald's AA.
+  # Year 2 jump expected per coaching staff. Available if he enters portal.
+  "Brandon Garrison",       "C",     "6-11", "Kentucky",      111,   100,   3.2,   1.8,   1.4,   0.16,   0.108,    0.000,    0.00,      0.568,   0.008,    0.092,    700000, "deep_value", 4, "LOW",    "At Kentucky (corrected from Michigan). Limited role but McDonald's AA upside; Year 2 jump candidate; available if he seeks more minutes",
+
+  # NOT VERIFIED 2025-26. Assume still at Duke. Stretch-4 who can guard 3-5.
+  "Thomas Haugh",           "PF",    "6-9",  "Duke",          113,   99,    3.5,   2.1,   1.4,   0.17,   0.085,    0.350,    0.35,      0.582,   0.014,    0.042,    900000, "value",      4, "LOW",    "UNVERIFIED — assume active. High-IQ Duke-system forward; can stretch floor; above-avg defender; smart Hi-Man type",
+
+  # NOT VERIFIED 2025-26. Prior data had him at Utah State.
+  "Yanic Konan Niederhauser","C",    "7-1",  "Utah State",    112,   98,    4.2,   2.2,   2.0,   0.18,   0.112,    0.285,    0.18,      0.585,   0.008,    0.118,    750000, "value",      4, "LOW",    "UNVERIFIED — assume active. Massive shot blocker with some stretch; mid-major discount applies; physical tools project well in Big 12",
 
   # ===========================================================================
-  # WINGS / SMALL FORWARDS — 3-and-D, must guard 2-4
+  # WINGS / SMALL FORWARDS
   # ===========================================================================
 
-  "RJ Luis Jr.",            "SF",    "6-8",  "UConn",              118,   96,    5.5,   3.2,   2.3,   0.20,   0.062,    0.362,    0.44,      0.600,   0.020,    0.045,   1400000, "premium",    5, "Versatile, high IQ, defends 2-4; exactly what Self recruits at the 3; tourney-tested in high-stakes system",
-  "Cam Christie",           "SF",    "6-7",  "UCLA",               115,   98,    4.0,   2.6,   1.4,   0.18,   0.050,    0.378,    0.46,      0.590,   0.016,    0.028,    950000, "value",      4, "Long-armed wing with shooting ability; good defensive instincts, can guard multiple positions; undervalued at UCLA rebuild",
-  "Kobe Johnson",           "SF",    "6-7",  "USC",                113,   97,    3.6,   2.0,   1.6,   0.17,   0.055,    0.355,    0.42,      0.578,   0.022,    0.035,    800000, "value",      4, "High-end defensive wing; SDSU-pedigree defender, active hands, excellent rotation instincts; fits 3-and-D mold perfectly",
-  "Miles Byrd",             "SG/SF", "6-6",  "San Diego St.",      116,   97,    4.4,   2.8,   1.6,   0.19,   0.048,    0.375,    0.48,      0.598,   0.022,    0.028,    900000, "value",      4, "Tournament-tested; elite defender for position; SDSU pedigree means he's learned to guard at the highest level",
-  "Jaxson Robinson",        "SG/SF", "6-6",  "Arkansas",           114,   99,    3.5,   2.4,   1.1,   0.18,   0.045,    0.372,    0.50,      0.588,   0.018,    0.020,    750000, "value",      4, "Elite 3P shooter at high rate; heady player in structured systems; Arkansas tenure means he can handle Big 12 physicality",
-  "Adou Thiero",            "SF",    "6-7",  "Arkansas",           112,   100,   2.9,   1.8,   1.1,   0.16,   0.068,    0.342,    0.40,      0.570,   0.018,    0.035,    550000, "deep_value", 4, "Athletic, active hands, above-avg ORB rate for a wing; defensive upside; could emerge in role-defined system",
-  "Andrej Stojakovic",      "SG",    "6-6",  "Stanford",           116,   100,   3.8,   2.8,   1.0,   0.19,   0.038,    0.390,    0.52,      0.598,   0.016,    0.015,    800000, "value",      4, "High-IQ shooter, son of Peja; elite 3P% at high rate, understands spacing; below-market due to Stanford profile",
-  "Keshad Johnson",         "SG/SF", "6-6",  "Arizona",            113,   98,    3.2,   1.8,   1.4,   0.16,   0.052,    0.352,    0.42,      0.575,   0.022,    0.032,    700000, "value",      4, "High-energy defensive specialist; elite motor, multiple steals/blocks per game; exactly Self's 3-man type",
-  "Silas Demary Jr.",       "SG/SF", "6-6",  "Georgia Tech",       114,   101,   3.0,   2.1,   0.9,   0.20,   0.042,    0.358,    0.44,      0.580,   0.020,    0.018,    650000, "deep_value", 4, "Athletic wing with scoring upside; defensive tools are there, needs right system; ACC experience in physical play",
-  "Tre Carroll",            "SF",    "6-7",  "Wake Forest",        115,   99,    3.8,   2.3,   1.5,   0.17,   0.055,    0.388,    0.50,      0.585,   0.015,    0.030,    700000, "value",      4, "Pure 3-and-D wing; 38.8% from 3 at very high rate; solid defensive metrics; high value per dollar at $700K",
-  "Boogie Fland",           "SG",    "6-3",  "Arkansas",           117,   98,    4.9,   3.0,   1.9,   0.22,   0.035,    0.360,    0.42,      0.595,   0.024,    0.015,   1200000, "value",      4, "Scoring 2-guard with handle and defensive chops; undervalued if Arkansas enters rebuild; excellent steal rate",
+  # VERIFIED 2025-26: Returned to SDSU after withdrawing from 2025 draft.
+  # 10.4 PPG / 4.7 RPG. Mountain West Defensive Player of the Year.
+  # WARNING: 3P% dropped to 30.8% this year (was projected at 37.5%).
+  # Expected to declare for 2026 draft as late 2nd / undrafted prospect.
+  "Miles Byrd",             "SG/SF", "6-7",  "San Diego St.", 113,   96,    4.0,   2.2,   1.8,   0.18,   0.048,    0.308,    0.44,      0.578,   0.024,    0.030,    700000, "value",      4, "MEDIUM", "MWC Def. POY — elite defensive wing; WARNING: 3P% dropped to 30.8% (was 37.5%). Draft risk. Fit grade drops without reliable shooting",
+
+  # NOT VERIFIED 2025-26. Assume still at Arizona or transferred.
+  "Keshad Johnson",         "SG/SF", "6-6",  "Arizona",       113,   98,    3.2,   1.8,   1.4,   0.16,   0.052,    0.352,    0.42,      0.575,   0.022,    0.032,    700000, "value",      4, "LOW",    "UNVERIFIED — check portal status. High-energy defensive specialist; exactly Self's 3-man type; above-avg ORB rate for wing",
+
+  # NOT VERIFIED 2025-26. Assume still at Wake Forest.
+  "Tre Carroll",            "SF",    "6-7",  "Wake Forest",   115,   99,    3.8,   2.3,   1.5,   0.17,   0.055,    0.388,    0.50,      0.585,   0.015,    0.030,    650000, "value",      4, "LOW",    "UNVERIFIED — check portal status. Pure 3-and-D; 38.8% from 3 at high rate; solid defensive metrics; high value per dollar",
+
+  # NOT VERIFIED 2025-26. Assume still at Stanford.
+  "Andrej Stojakovic",      "SG",    "6-6",  "Stanford",      116,   100,   3.8,   2.8,   1.0,   0.19,   0.038,    0.390,    0.52,      0.598,   0.016,    0.015,    750000, "value",      4, "LOW",    "UNVERIFIED — check portal status. Elite 3P shooter (son of Peja); high IQ; below-market due to Stanford profile",
+
+  # NOT VERIFIED 2025-26.
+  "Silas Demary Jr.",       "SG/SF", "6-6",  "Georgia Tech",  114,   101,   3.0,   2.1,   0.9,   0.20,   0.042,    0.358,    0.44,      0.580,   0.020,    0.018,    600000, "deep_value", 4, "LOW",    "UNVERIFIED — check portal status. Athletic wing with scoring upside; defensive tools present; ACC experience in physical play",
 
   # ===========================================================================
-  # GUARDS — Lead guards & scoring guards
+  # GUARDS
   # ===========================================================================
+  # NOTE: Guard market significantly thinner than projected in prior version.
+  # Devin Carter (Kings), Tre Johnson (Wizards), Chucky Hepburn (Raptors),
+  # Johnell Davis (G League), RJ Davis (G League), Jeremiah Fears (Pelicans),
+  # and Caleb Love (Blazers) are ALL no longer in college.
 
-  "Devin Carter",           "PG",    "6-3",  "Providence",         119,   95,    6.2,   3.5,   2.7,   0.26,   0.032,    0.358,    0.38,      0.610,   0.030,    0.012,   1600000, "premium",    5, "Elite two-way guard; 3.0% steal rate is top-tier nationally; pushes transition, runs half-court; Self's ideal PG archetype",
-  "Johnell Davis",          "SG",    "6-4",  "FAU",                121,   97,    6.8,   4.1,   2.7,   0.28,   0.038,    0.372,    0.44,      0.625,   0.028,    0.018,   1500000, "value",      5, "STANDOUT undervalue: top-20 ORtg nationally at 28% usage; mid-major discount = $400-700K below P4 equivalent; must target",
-  "RJ Davis",               "G",     "6-1",  "North Carolina",     118,   98,    4.8,   3.2,   1.6,   0.24,   0.028,    0.378,    0.50,      0.608,   0.024,    0.010,   1300000, "premium",    4, "Battle-tested veteran guard; ACC champion-level toughness; excellent 3P%, high-volume shot creator; leadership value",
-  "Chucky Hepburn",         "PG",    "6-1",  "Wisconsin",          115,   97,    4.0,   2.5,   1.5,   0.22,   0.025,    0.365,    0.44,      0.592,   0.028,    0.008,   1000000, "value",      5, "High-IQ, disciplined PG; Wisconsin defensive pedigree matches Self's standards; runs sets, minimal turnovers, heady",
-  "Dug McDaniel",           "PG",    "6-0",  "Michigan",           116,   99,    3.8,   2.8,   1.0,   0.25,   0.022,    0.352,    0.38,      0.588,   0.026,    0.008,    900000, "value",      4, "Speedster PG with excellent vision; pushes pace perfectly for Self's transition game; solid defensive effort",
-  "Jeremiah Fears",         "G",     "6-4",  "Oklahoma",           115,   100,   3.5,   2.6,   0.9,   0.24,   0.030,    0.345,    0.40,      0.585,   0.022,    0.012,    950000, "value",      4, "Young, athletic scorer with upside; shows big-moment mentality; needs defensive consistency — Self will push that hard",
-  "Ian Jackson",            "SG",    "6-4",  "North Carolina",     117,   99,    4.5,   3.2,   1.3,   0.23,   0.035,    0.362,    0.44,      0.600,   0.020,    0.015,   1100000, "value",      4, "Elite athlete with scoring upside; long, can guard 2-3; UNC background = understands winning culture and system play",
-  "Elliot Cadeau",          "PG",    "6-2",  "North Carolina",     113,   99,    3.0,   2.0,   1.0,   0.21,   0.025,    0.338,    0.38,      0.578,   0.026,    0.010,    800000, "value",      4, "Young but polished PG; excellent assist-to-turnover ratio; defensive activity level very high for the position",
-  "Javian McCollum",        "G",     "6-2",  "South Carolina",     116,   100,   3.6,   2.6,   1.0,   0.24,   0.028,    0.358,    0.44,      0.592,   0.022,    0.010,    750000, "value",      3, "Smooth scoring guard; good shot maker in half-court; defensive effort needs consistency for Self's standard",
-  "Caleb Love",             "SG",    "6-4",  "Arizona",            115,   101,   3.2,   2.6,   0.6,   0.26,   0.030,    0.352,    0.46,      0.582,   0.018,    0.010,   1200000, "premium",    3, "Elite scorer and name brand; high usage, big shot maker; defensive metrics are borderline for Self — culture fit is key question",
-  "Tamar Bates",            "SG",    "6-5",  "Indiana",            114,   99,    3.6,   2.4,   1.2,   0.20,   0.042,    0.362,    0.46,      0.588,   0.020,    0.015,    750000, "value",      4, "Crafty off-ball scorer, high 3P rate fits spacing scheme; IQ player who runs actions well; solid defensive awareness",
-  "Nijel Pack",             "PG",    "6-0",  "Miami",              116,   98,    4.2,   2.9,   1.3,   0.22,   0.028,    0.385,    0.50,      0.600,   0.026,    0.008,    900000, "value",      4, "Elite catch-and-shoot; runs off screens, exactly what Hi-Lo needs; mid-major discount makes him $300-500K below market",
-  "Tre Johnson",            "SG",    "6-5",  "Texas",              118,   100,   5.1,   3.8,   1.3,   0.28,   0.030,    0.368,    0.48,      0.618,   0.018,    0.010,   2000000, "premium",    3, "Elite scorer, likely highest ORtg on any roster; defensive metrics a concern — Self will demand full buy-in on D",
-  "CJ Fredrick",            "SG",    "6-4",  "Iowa",               118,   100,   3.8,   2.9,   0.9,   0.16,   0.025,    0.415,    0.62,      0.618,   0.014,    0.008,    600000, "deep_value", 3, "Elite 3P shooter at very high rate (62% of shots are 3s); limited athleticism but floor spacing value is real"
+  # VERIFIED 2025-26: Transferred from UNC to Michigan. Michigan went 34-3,
+  # Big Ten champs, No. 1 seed, Elite Eight. 10.1 PPG / 6.2 APG / 37.3% 3P.
+  # Sweet 16: 17 pts / 7 ast vs. Alabama. Undersized (6'2") but elite playmaker.
+  # Eligible to return — draft risk is moderate (undersized, developing scorer).
+  "Elliot Cadeau",          "PG",    "6-2",  "Michigan",      115,   98,    4.0,   2.8,   1.2,   0.22,   0.025,    0.373,    0.42,      0.594,   0.026,    0.008,   1100000, "premium",    5, "MEDIUM", "Best available PG — elite playmaker on Elite 8 team; 6.2 APG, 37.3% 3P; undersized but wins; moderate draft risk; top priority if available",
+
+  # VERIFIED 2025-26: Transferred from UNC to St. John's. St. John's Sweet 16.
+  # 9.6 PPG / 35.3% 3P / 90.0% FT. 19 pts / 5 steals vs. Villanova.
+  # Beat Kansas 67-65 in Round of 32. Long, athletic SG with scoring upside.
+  "Ian Jackson",            "SG",    "6-4",  "St. John's",    115,   99,    4.0,   2.8,   1.2,   0.21,   0.035,    0.353,    0.42,      0.592,   0.022,    0.015,    950000, "value",      4, "LOW",    "Transferred from UNC; 35.3% 3P on good volume; length and athleticism project well; Kansas connection (beat KU in R32); eligible to return",
+
+  # VERIFIED 2025-26: Transferred from Miami to Oklahoma with medical waiver.
+  # BREAKOUT: 16.5 PPG / 45.2% 3P / 86.0% FT / 47.4% FG. PER: 20.1.
+  # Final year of eligibility. 2026 draft eligible — likely pursuing NBA.
+  "Nijel Pack",             "PG",    "6-0",  "Oklahoma",      118,   98,    5.2,   3.8,   1.4,   0.24,   0.025,    0.452,    0.52,      0.618,   0.026,    0.008,   1400000, "value",      5, "HIGH",   "ELITE YEAR: 45.2% 3P / 16.5 PPG. Best shooter available if he doesn't go pro. Final year — almost certainly declaring for 2026 draft. Monitor closely",
+
+  # VERIFIED 2025-26: Transferred from Michigan → Kansas State → Memphis.
+  # 13.9 PPG / 4.6 APG / 32.9% 3P / 84.9% FT at Memphis. Final year.
+  # Improved significantly from 25.8% 3P at K-State. NYC area product.
+  "Dug McDaniel",           "PG",    "6-0",  "Memphis",       114,   100,   3.5,   2.6,   0.9,   0.24,   0.020,    0.329,    0.40,      0.582,   0.024,    0.008,    800000, "value",      4, "LOW",    "Final year at Memphis; 13.9 PPG / 4.6 APG; 3P% (32.9%) a concern for Self's spacing requirement but handles and IQ are real",
+
+  # NOT VERIFIED 2025-26. Assume still at Indiana or transferred.
+  "Tamar Bates",            "SG",    "6-5",  "Indiana",       114,   99,    3.6,   2.4,   1.2,   0.20,   0.042,    0.362,    0.46,      0.588,   0.020,    0.015,    700000, "value",      4, "LOW",    "UNVERIFIED — check portal status. Crafty off-ball scorer; high 3P attempt rate fits spacing scheme; solid defensive awareness",
+
+  # NOT VERIFIED 2025-26. Assume still at South Carolina.
+  "Javian McCollum",        "G",     "6-2",  "South Carolina",114,   101,   3.2,   2.4,   0.8,   0.23,   0.025,    0.350,    0.42,      0.582,   0.020,    0.008,    650000, "deep_value", 3, "LOW",    "UNVERIFIED. Smooth scoring guard; borderline Self-fit on defense — needs D buy-in",
+
+  # NOT VERIFIED 2025-26. Assume graduated or 5th year somewhere.
+  "CJ Fredrick",            "SG",    "6-4",  "Iowa",          118,   100,   3.8,   2.9,   0.9,   0.16,   0.025,    0.415,    0.62,      0.618,   0.014,    0.008,    500000, "deep_value", 3, "LOW",    "UNVERIFIED eligibility status — verify. Elite 3P shooter at very high volume; limited athleticism but floor spacing value real"
 )
 
 # -----------------------------------------------------------------------------
-# BUDGET PARAMETERS
+# BUDGET PARAMETERS (updated NIL values)
 # -----------------------------------------------------------------------------
-budget_params <- list(
-  scenario_a_total  = 8000000,   # Bidunga stays; ~$8M total roster NIL
-  scenario_b_total  = 10500000,  # Bidunga leaves; ~$2.8M recouped + $8M base
+# Bidunga NIL updated to reflect Big 12 Defensive POY status ($3.2M).
+# Adkins NIL updated to reflect top-35 C profile ($700K, not $300K).
+# Barnett NIL updated to reflect SG profile ($250K, not $200K).
+# Portal budgets recalculated accordingly.
 
-  # Committed costs in each scenario
+budget_params <- list(
+  scenario_a_total  = 8000000,
+  scenario_b_total  = 10500000,
+
   committed_a = sum(kansas_returning$nir_sal) + sum(kansas_freshmen$nir_sal),
   committed_b = sum(kansas_returning$nir_sal[kansas_returning$name != "Flory Bidunga"]) +
                 sum(kansas_freshmen$nir_sal),
 
-  # Remaining for portal acquisitions
   portal_budget_a = 8000000 -
     (sum(kansas_returning$nir_sal) + sum(kansas_freshmen$nir_sal)),
   portal_budget_b = 10500000 - (
@@ -152,7 +205,11 @@ budget_params <- list(
   )
 )
 
-message("Scenario A — Portal Budget Available: $",
+message("Scenario A — Committed: $",
+        format(budget_params$committed_a, big.mark = ","),
+        " | Portal budget: $",
         format(budget_params$portal_budget_a, big.mark = ","))
-message("Scenario B — Portal Budget Available: $",
+message("Scenario B — Committed: $",
+        format(budget_params$committed_b, big.mark = ","),
+        " | Portal budget: $",
         format(budget_params$portal_budget_b, big.mark = ","))

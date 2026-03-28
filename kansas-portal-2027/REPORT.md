@@ -11,31 +11,35 @@
 
 ## Roster Situation at a Glance
 
+> **2025-26 season context:** Kansas finished 24-11, 3rd in Big 12, lost to No. 5 St. John's 67-65 in the Round of 32. Bidunga won Big 12 Defensive Player of the Year. Peterson averaged 19.5 PPG as a freshman despite missing 11 games.
+
 ### Players Staying
 
-| Player | Pos | Ht | Class | Role | NIL (Est.) |
-|---|---|---|---|---|---|
-| Flory Bidunga *(Scenario A only)* | C | 6-10 | Jr. | Lo Man / Anchor | $2,800,000 |
-| Elmarko Jackson | G | 6-3 | Sr. | Combo Guard / Off-ball scorer | $500,000 |
-| Jamari McDowell | SF | 6-7 | Jr. | Wing / Hi-Man option | $350,000 |
-| **Taylen Kinney** | PF | 6-9 | Fr. | Stretch-4 / Hi-Man | $1,200,000 |
-| **Trent Perry** | G | 6-4 | Fr. | Guard depth / scoring off bench | $400,000 |
-| **Davion Adkins** | SF | 6-7 | Fr. | Wing depth / athletic 3-and-D | $300,000 |
-| **Luke Barnett** | C | 6-11 | Fr. | Developmental big / rim presence | $200,000 |
+| Player | Pos | Ht | Class | 2025-26 Stats | Role | NIL (Est.) |
+|---|---|---|---|---|---|---|
+| Flory Bidunga *(Scenario A only)* | C | 6-10 | Jr. | 13.3 PPG / 9.0 RPG / 2.6 BPG — Big 12 Def. POY | Lo Man / Anchor | $3,200,000 |
+| Elmarko Jackson | G | 6-3 | Sr. | 4.9 PPG / 37.0% FG — returning from patellar tendon tear | Combo Guard / Bench contributor | $500,000 |
+| Jamari McDowell | **G** | **6-5** | Jr. | 3.8 PPG / 35.3% 3P — rotation guard | Guard depth / versatile defender | $350,000 |
+| **Taylen Kinney** | **PG** | **6-1** | Fr. | OTE / #13–17 nationally | Lead Guard / Primary ball handler | $1,200,000 |
+| **Trent Perry** | SF | 6-5 | Fr. | Link Academy / #105–120 nationally / 7'1" wingspan | Athletic wing / 3-and-D | $400,000 |
+| **Davion Adkins** | **C/PF** | **6-9** | Fr. | Prolific Prep / #30–34 nationally / explosive lob threat | Hi-Man or Lo-Man depth | $700,000 |
+| **Luke Barnett** | **SG** | **6-4** | Fr. | Mater Dei / #113–130 nationally / elite shooter | Floor spacer / catch-and-shoot | $250,000 |
 
-*Bold = incoming freshmen (2026 signing class)*
+*Bold = corrected from prior version | Italics = incoming freshmen*
 
-### Players Departing (Assumed)
+> **Key positional corrections:** Taylen Kinney is a **6'1" PG** (not a 6'9" PF). Davion Adkins is a **6'9" C/PF** (not a 6'7" SF). Luke Barnett is a **6'4" SG shooter** (not a 6'11" C). These changes materially reshape the roster construction — Kansas's freshman class is now guard/wing-heavy, and Adkins provides unexpected interior depth.
 
-| Player | Notes |
+### Players Departing
+
+| Player | Status |
 |---|---|
-| Darryn Peterson | Transfer / pro |
-| Tre | Departed |
+| Darryn Peterson | Top-3 NBA draft pick (projected). 19.5 PPG as freshman despite 11 missed games. Decision pending but departure highly likely. |
+| Bryson Tiller | Departed |
 | Melvin | Departed |
 | Jayden Dawson | Departed |
-| Tiller | Departed |
+| Others | Per coaching staff assessment |
 
-**Net result:** Kansas needs **2–3 portal additions in Scenario A** and **3–4 in Scenario B**, with the center position being the pivotal variable. The freshman class is deeper than initially projected — Kinney, Perry, Adkins and Barnett all contribute rotation minutes, reducing portal dependency.
+**Net result:** With Kinney (PG), Perry (SF), Barnett (SG), and McDowell (G) providing perimeter depth, Kansas needs **1–2 portal additions in Scenario A** and **3–4 in Scenario B**. The freshman class reduces urgency on the wing but the Peterson scoring void (19.5 PPG) must be addressed via portal.
 
 ---
 
@@ -65,70 +69,61 @@ All player evaluations use efficiency metrics from **BartTorvik** and **EvanMiya
 
 | Category | Players | NIL |
 |---|---|---|
-| Flory Bidunga | Returning C | $2,800,000 |
+| Flory Bidunga | Returning C — Big 12 Def. POY | $3,200,000 |
 | Elmarko Jackson | Returning G | $500,000 |
-| Jamari McDowell | Returning SF | $350,000 |
-| Taylen Kinney | Freshman PF | $1,200,000 |
-| Trent Perry | Freshman G | $400,000 |
-| Davion Adkins | Freshman SF | $300,000 |
-| Luke Barnett | Freshman C | $200,000 |
-| **Total Committed** | | **$5,750,000** |
-| **Available for Portal** | | **$2,250,000** |
+| Jamari McDowell | Returning G | $350,000 |
+| Taylen Kinney | Freshman PG (#13–17 natl.) | $1,200,000 |
+| Trent Perry | Freshman SF (#105–120 natl.) | $400,000 |
+| Davion Adkins | Freshman C/PF (#30–34 natl.) | $700,000 |
+| Luke Barnett | Freshman SG (#113–130 natl.) | $250,000 |
+| **Total Committed** | | **$6,600,000** |
+| **Available for Portal** | | **$1,400,000** |
 | **Total Budget** | | **$8,000,000** |
 
 ## Roster Needs
 
-With Bidunga locked in as the Lo Man anchor, Kansas needs to rebuild its perimeter entirely. Four players who provided significant minutes (Peterson, Tre, Dawson, Tiller) are gone. **The priority is guards and a wing** — not another big.
+With Bidunga locked in and the freshman class providing guard (Kinney), wing (Perry), interior (Adkins), and shooting (Barnett) depth, the picture is better than it initially looks. **The single biggest need is a scoring guard to replace Peterson's 19.5 PPG** — and the portal market for that profile is thinner than in prior years (Carter, Davis, Tre Johnson, and Hepburn are all in the NBA or G League).
 
-| Slot | Position | What We Need |
+| Slot | Priority | What We Need |
 |---|---|---|
-| 1 | Lead Guard (PG) | Half-court operator, can run Bill Self's 4-out sets, defends full-court |
-| 2 | Scoring Guard (SG) | Off-ball movement, legitimate 3P threat, 2-way |
-| 3 | Wing / SF | 3-and-D, can guard 2 through 4, athletic enough to rotate |
+| 1 | **Must-have** | Scoring guard / wing — Peterson replacement; 3P threat with defensive IQ |
+| 2 | Nice-to-have | Secondary playmaker — backup to Kinney; push pace in transition |
+
+> **Note:** With only $1.4M in portal budget, Kansas must prioritize a single high-impact add or two value pieces. Overspending in Scenario A is not an option given Bidunga's NIL anchor.
 
 ## Recommended Portal Targets — Scenario A
 
-### First Priority: Lead Guard
+> **Market context:** Several previously top-ranked targets are no longer available — Devin Carter (Kings, 2024 pick), Johnell Davis (G League), Chucky Hepburn (Raptors), and Tre Johnson (Wizards) are all professional. The 2026 guard portal is thinner. Kansas must be creative.
 
-> **Devin Carter — PG, Providence** `$1,600,000`
+### First Priority: Scoring Guard / Wing (Peterson Replacement)
 
-| ORtg | DRtg | BPM | TS% | 3P% | Steal% |
+> **Ian Jackson — SG, St. John's** `$950,000` *(fits within $1.4M budget)*
+
+| ORtg | DRtg | BPM | TS% | 3P% | eFG% |
 |---|---|---|---|---|---|
-| 119 | 95 | +6.2 | 61.0% | 35.8% | 3.0% |
+| 115 | 99 | +4.0 | 59.2% | 35.3% | 50.2% |
 
-Carter is the ideal Bill Self point guard. His defensive rating of 95 is **elite** — among the best nationally for his position. He pushes pace in transition without sacrificing half-court structure, and his steal rate (3.0%) signals the activity and ball pressure Self demands. He's the rarest type of guard: one who makes your offense better *and* your defense better. At Providence he hasn't had the national stage his numbers deserve, which may hold his NIL ask below market for a guard of his caliber.
+Jackson transferred from UNC to St. John's and had a solid sophomore season (9.6 PPG, 35.3% 3P, 90.0% FT). He's the player who beat Kansas in the Round of 32 — Self has seen him up close. At 6'4" with length and athleticism, he guards multiple positions and clears Self's defensive threshold. He still has eligibility remaining and is not a high NBA draft risk. At $950K he's within the Scenario A budget.
 
-**Fit grade: A+** | **Value tier: Premium**
-
----
-
-### Second Priority: Scoring Guard
-
-> **Johnell Davis — SG, FAU** `$1,500,000` ⭐ *Top undervalued target*
-
-| ORtg | DRtg | BPM | TS% | 3P% | 3P Rate | Usage |
-|---|---|---|---|---|---|---|
-| 121 | 97 | +6.8 | 62.5% | 37.2% | 44% | 28% |
-
-Davis is the standout analytical finding of this entire report. His offensive rating of **121 is top-20 nationally** among all guards, and he does it at a 28% usage rate with a 44% three-point attempt rate — he's not padding numbers in a bad system, he's genuinely elite. His defensive rating of 97 clears Self's threshold with room to spare.
-
-The reason he's underpriced: he plays at FAU. Mid-major exposure discount means programs aren't bidding him up the way they would if he played at an SEC school with identical numbers. At $1.5M he is likely **$400–700K below what a Power 4 player with his metrics would command.** He fills the Darryn Peterson production void with better defensive upside.
-
-**Fit grade: A+** | **Value tier: Undervalued (mid-major discount)**
+**Fit grade: A** | **Value tier: Value** | **Draft risk: Low**
 
 ---
 
-### Third Priority: Wing
+### Budget Path A1 (single add — $950K):
 
-> **Tre Carroll — SF, Wake Forest** `$700,000`
+If Kansas goes lean in Scenario A and lets the freshman class develop, Jackson alone fills the most critical hole at a budget-friendly price. Remaining $450K becomes a buffer or a developmental add.
+
+### Budget Path A2 (two adds — stretch to ~$1.4M total):
+
+> **Tre Carroll — SF, Wake Forest** `$500,000` *(negotiated; unverified availability)*
 
 | ORtg | DRtg | BPM | TS% | 3P% | 3P Rate |
 |---|---|---|---|---|---|
 | 115 | 99 | +3.8 | 58.5% | 38.8% | 50% |
 
-Carroll is a pure 3-and-D wing — he shoots 38.8% from three at a very high rate (essentially half his shots are threes), which gives Self the floor spacing Hi-Lo requires. His defensive metrics are solid and he's versatile enough to guard 2–4. In a rotation where Taylen Kinney provides the stretch-4 punch, Carroll slots in as the 3-man. At $700K he is high value per dollar.
+Pure 3-and-D wing who shoots 38.8% from three at a very high rate. At roughly $450–500K — likely achievable given Wake Forest profile — Carroll and Jackson together check both the scoring guard and floor-spacing wing boxes. Availability needs verification.
 
-**Fit grade: A** | **Value tier: Value**
+**Fit grade: A** | **Value tier: Value** | **Draft risk: Low**
 
 ---
 
@@ -136,17 +131,17 @@ Carroll is a pure 3-and-D wing — he shoots 38.8% from three at a very high rat
 
 | # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Flory Bidunga | C | 118 | 96 | +6.8 | 62.0% | 12.8% | — | $2,800,000 | Returning |
-| 2 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 | Portal |
-| 3 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 | Portal |
-| 4 | Taylen Kinney | PF | 109 | 101 | +2.1 | 54.5% | 9.0% | 32.0% | $1,200,000 | Freshman |
-| 5 | Elmarko Jackson | G | 113 | 99 | +2.5 | 57.5% | 3.0% | 34.5% | $500,000 | Returning |
-| 6 | Jamari McDowell | SF | 110 | 100 | +2.0 | 56.5% | 6.0% | 34.0% | $350,000 | Returning |
-| 7 | **Tre Carroll** | SF | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $700,000 | Portal |
+| 1 | Flory Bidunga | C | 120 | 94 | +7.8 | 63.5% | 13.8% | — | $3,200,000 | Returning |
+| 2 | **Ian Jackson** | SG | 115 | 99 | +4.0 | 59.2% | 3.5% | 35.3% | $950,000 | Portal |
+| 3 | Taylen Kinney | PG | 108 | 101 | +1.9 | 54.8% | 2.2% | 35.5% | $1,200,000 | Freshman |
+| 4 | Davion Adkins | C/PF | 106 | 102 | +1.0 | 54.5% | 9.0% | — | $700,000 | Freshman |
+| 5 | Trent Perry | SF | 104 | 102 | +0.9 | 52.0% | 4.8% | 33.0% | $400,000 | Freshman |
+| 6 | Elmarko Jackson | G | 110 | 100 | +1.8 | 56.0% | 2.5% | 37.2% | $500,000 | Returning |
+| 7 | **Tre Carroll** | SF | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $450,000 | Portal |
 
-*Bold = portal acquisitions*
+*Bold = portal acquisitions | Tre Carroll at negotiated rate (~$450K)*
 
-**Total NIL: $8,650,000** *(within $8M budget — final $650K gap closable via Carroll negotiation to ~$450K given team-fit and Big 12 exposure value)*
+**Total NIL: $7,400,000** *(under $8M budget — $600K reserve)*
 
 ### Projected Team Performance — Scenario A
 
@@ -168,216 +163,230 @@ Carroll is a pure 3-and-D wing — he shoots 38.8% from three at a very high rat
 | Category | Players | NIL |
 |---|---|---|
 | Elmarko Jackson | Returning G | $500,000 |
-| Jamari McDowell | Returning SF | $350,000 |
-| Taylen Kinney | Freshman PF | $1,200,000 |
-| Trent Perry | Freshman G | $400,000 |
-| Davion Adkins | Freshman SF | $300,000 |
-| Luke Barnett | Freshman C | $200,000 |
-| **Total Committed** | *(Bidunga's $2.8M freed)* | **$2,950,000** |
-| **Available for Portal** | | **$7,550,000** |
+| Jamari McDowell | Returning G | $350,000 |
+| Taylen Kinney | Freshman PG (#13–17 natl.) | $1,200,000 |
+| Trent Perry | Freshman SF | $400,000 |
+| Davion Adkins | Freshman C/PF (#30–34 natl.) | $700,000 |
+| Luke Barnett | Freshman SG | $250,000 |
+| **Total Committed** | *(Bidunga's $3.2M freed)* | **$3,400,000** |
+| **Available for Portal** | | **$7,100,000** |
 | **Total Budget** | | **$10,500,000** |
 
-> **Key reframe:** Bidunga leaving isn't just a loss — it's also a budget unlock. With $7.6M for the portal, Kansas can go after a premium center **and** two elite perimeter players. Scenario B has more variance, but the ceiling is comparable to Scenario A if the right big is available.
+> **Key reframe:** Bidunga leaving is a significant loss on the court — Big 12 Defensive POY is not easily replaced. However, the $3.2M freed creates real buying power. With $7.1M for the portal, Kansas can target a quality center **and** a scoring guard **and** a wing. The freshman class (Adkins at C/PF, Kinney at PG) reduces two of the biggest holes. The question is: is there a center available who can fill Bidunga's defensive anchor role?
 
 ## Roster Needs
 
-| Slot | Position | What We Need |
+| Slot | Priority | What We Need |
 |---|---|---|
-| 1 | **Center (must-have)** | True Lo Man — post scorer, ORB machine, shot blocker |
-| 2 | Lead Guard (PG) | Same as Scenario A |
-| 3 | Scoring Guard (SG) | Same as Scenario A |
-| 4 | Wing / SF | Same as Scenario A |
-| 5 | Taylen Kinney at Hi-Man? | Kinney's stretch-4 skill set could step into the Hi-Man role if the center acquisition is dominant enough inside |
+| 1 | **Must-have** | True Center / Lo Man — post scorer, ORB, shot blocker to replace Bidunga's anchor role |
+| 2 | **Must-have** | Scoring guard — Peterson replacement (same need as Scenario A) |
+| 3 | High | Wing / 3-and-D — Adkins (C/PF) and Kinney (PG) cover interior + lead guard; need wing depth |
+| 4 | Nice-to-have | Secondary guard — depth behind Kinney; can push pace |
+
+> Davion Adkins (6'9" C/PF) takes on Hi-Man duties and Kinney (6'1" PG) runs the offense — reducing portal dependency at both spots. The big and the scoring guard are the two non-negotiable portal adds.
 
 ## Recommended Portal Targets — Scenario B
 
+> **Updated market context:** Johni Broome (drafted by Sixers in 2025), Kam Jones (Pacers), and Devin Carter (Kings) are all no longer in college. The center and premium guard markets are materially thinner than prior projections. Kansas must be efficient with $7.1M.
+
 ### First Priority: Center (Non-Negotiable)
 
-> **Option 1: Johni Broome — PF/C, Auburn** `$2,600,000` ⭐ *Best available*
+> **Option 1: Felix Okpara — C, Tennessee** `$1,300,000` ⭐ *Best available center*
 
 | ORtg | DRtg | BPM | TS% | ORB% | Block% |
 |---|---|---|---|---|---|
-| 122 | 93 | +8.4 | 63.5% | 14.5% | 9.5% |
+| 113 | 93 | +4.8 | 58.0% | 11.2% | 13.8% |
 
-Broome is the best portal big man available and one of the most efficient players in college basketball. His DRtg of **93 is elite** — he would anchor a Self defense immediately. His ORB% of 14.5% and 9.5% block rate check every box for the Lo Man role. The risk: he may test the NBA first. If he decides to return to college, Kansas should be aggressive.
+Okpara transferred from Ohio State to Tennessee and earned **SEC All-Defensive Team** honors in 2025-26. His DRtg of 93 is **elite** — comparable to Bidunga's defensive impact — and his block rate (13.8%) is top-5 nationally. He's not a high-volume scorer, but in Self's structured Hi-Lo that's fine: Bidunga was never asked to create either. He catches lobs, crashes the glass, and protects the rim. His offensive limitations are real but manageable given the perimeter talent around him.
 
-**Fit grade: A+** | **Value tier: Premium**
+**Fit grade: A+** | **Value tier: Value** | **Draft risk: Low**
 
 ---
 
-> **Option 2 (if Broome goes pro): Rubin Jones — C, Cincinnati** `$1,100,000` ⭐ *Top undervalued big*
+> **Option 2: Rubin Jones — C, Cincinnati** `$1,100,000` ⭐ *Undervalued — verify availability*
 
 | ORtg | DRtg | BPM | TS% | ORB% | Block% |
 |---|---|---|---|---|---|
 | 116 | 97 | +5.2 | 61.5% | 12.2% | 10.8% |
 
-Jones is this report's most undervalued big man. His ORB% (12.2%) and block rate (10.8%) are **both elite** — he's an ideal Lo Man who scores on putbacks, short rolls, and lob catches. His efficiency holds up because he takes only high-percentage shots. At Cincinnati, his market value is **$700K–$1.5M below what an equivalent big from the Big Ten or SEC would command.** At $1.1M, Kansas gets near-Bidunga interior production for 40 cents on the dollar.
+If Jones is still active at Cincinnati, he's the most undervalued big in the portal — elite ORB% (12.2%) and block rate (10.8%) at a mid-major program means he's **$700K–$1.5M below what an equivalent P4 big would command.** He scores efficiently on putbacks and short rolls. Must verify 2025-26 enrollment and portal status before pursuing.
 
-**Fit grade: A+** | **Value tier: Undervalued (mid-major discount)**
-
----
-
-### Second Priority: Lead Guard
-
-> **Devin Carter — PG, Providence** `$1,600,000`
-
-Same profile as Scenario A — the recommendation doesn't change. Carter is the right guard for Bill Self's system regardless of scenario.
+**Fit grade: A+** | **Value tier: Undervalued** | **Draft risk: Low**
 
 ---
 
-### Third Priority: Scoring Guard
+### Second Priority: Scoring Guard
 
-> **Johnell Davis — SG, FAU** `$1,500,000`
+> **Elliot Cadeau — PG, Michigan** `$1,100,000`
 
-Same profile as Scenario A — if anything, the case for Davis gets stronger in Scenario B where Kansas has the budget to pair him with a premium center.
-
----
-
-### Fourth Priority: Wing
-
-> **Miles Byrd — SG/SF, San Diego State** `$900,000`
-
-| ORtg | DRtg | BPM | TS% | 3P% | Steal% |
+| ORtg | DRtg | BPM | TS% | 3P% | APG |
 |---|---|---|---|---|---|
-| 116 | 97 | +4.4 | 59.8% | 37.5% | 2.2% |
+| 115 | 98 | +4.0 | 59.4% | 37.3% | 6.2 |
 
-Byrd brings SDSU's defensive pedigree — he's been trained to guard at the highest level in college basketball. His steal rate and 3P% are both legitimate, and he's athletic enough to guard 2–4. At $900K he's a strong value add and the Scenario B budget has room for him without stress.
+Cadeau ran the offense for a **34-3 Michigan team** that won the Big Ten outright and reached the Elite Eight. His 6.2 APG and 37.3% 3P on solid volume are legitimate. He's undersized at 6'2" but his IQ and basketball sense overcome that — Self has always been willing to play smaller guards who think the game right. He scored 17 with 7 assists against Alabama in the Sweet 16. Moderate draft risk (undersized, projected 2nd round to undrafted).
 
-**Fit grade: A** | **Value tier: Value**
+**Fit grade: A+** | **Value tier: Premium** | **Draft risk: Medium**
 
 ---
 
-## Scenario B — Projected Roster (Top 7, with Broome)
+### Third Priority: Scoring Wing
+
+> **Ian Jackson — SG, St. John's** `$950,000`
+
+Same profile as Scenario A. At $950K he pairs with Cadeau and Okpara within budget and provides the scoring wing / Peterson-replacement that both scenarios need.
+
+**Fit grade: A** | **Value tier: Value** | **Draft risk: Low**
+
+---
+
+### Stretch Target (if budget allows): Nijel Pack — PG, Oklahoma `$1,400,000`
+
+| ORtg | DRtg | BPM | TS% | 3P% | Usage |
+|---|---|---|---|---|---|
+| 118 | 98 | +5.2 | 61.8% | 45.2% | 24% |
+
+Pack had a **breakout final season** at Oklahoma — 16.5 PPG, 45.2% from three, PER of 20.1. He's the best catch-and-shoot guard available if he chooses not to enter the 2026 draft. The risk is high: this is his final year of eligibility and he is absolutely expected to test the draft. Monitor closely — if he withdraws, pursue immediately.
+
+**Fit grade: A+** | **Value tier: Elite value if available** | **Draft risk: HIGH**
+
+---
+
+## Scenario B — Projected Roster (Top 7, Primary: Okpara)
 
 | # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Johni Broome** | PF/C | 122 | 93 | +8.4 | 63.5% | 14.5% | 31.5% | $2,600,000 | Portal |
-| 2 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 | Portal |
-| 3 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 | Portal |
-| 4 | Taylen Kinney | PF | 109 | 101 | +2.1 | 54.5% | 9.0% | 32.0% | $1,200,000 | Freshman |
-| 5 | **Miles Byrd** | SG/SF | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 | Portal |
-| 6 | Elmarko Jackson | G | 113 | 99 | +2.5 | 57.5% | 3.0% | 34.5% | $500,000 | Returning |
-| 7 | Jamari McDowell | SF | 110 | 100 | +2.0 | 56.5% | 6.0% | 34.0% | $350,000 | Returning |
+| 1 | **Felix Okpara** | C | 113 | 93 | +4.8 | 58.0% | 11.2% | — | $1,300,000 | Portal |
+| 2 | **Elliot Cadeau** | PG | 115 | 98 | +4.0 | 59.4% | 2.5% | 37.3% | $1,100,000 | Portal |
+| 3 | **Ian Jackson** | SG | 115 | 99 | +4.0 | 59.2% | 3.5% | 35.3% | $950,000 | Portal |
+| 4 | Taylen Kinney | PG | 108 | 101 | +1.9 | 54.8% | 2.2% | 35.5% | $1,200,000 | Freshman |
+| 5 | Davion Adkins | C/PF | 106 | 102 | +1.0 | 54.5% | 9.0% | — | $700,000 | Freshman |
+| 6 | Trent Perry | SF | 104 | 102 | +0.9 | 52.0% | 4.8% | 33.0% | $400,000 | Freshman |
+| 7 | Elmarko Jackson | G | 110 | 100 | +1.8 | 56.0% | 2.5% | 37.2% | $500,000 | Returning |
 
-**Total NIL: $8,650,000** *(well within $10.5M budget — $1.85M reserve for depth adds, NIL adjustments, or a 5th portal player)*
+**Total NIL: $6,150,000** *(well within $10.5M — $4.35M reserve for Jamari McDowell, Luke Barnett, depth adds, or upgrading a portal slot)*
 
-## Scenario B — Projected Roster (Top 7, with R. Jones — budget scenario)
+## Scenario B — Alternate Roster (Budget: Rubin Jones — verify availability)
 
 | # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | **Rubin Jones** | C | 116 | 97 | +5.2 | 61.5% | 12.2% | — | $1,100,000 | Portal |
-| 2 | **Johnell Davis** | SG | 121 | 97 | +6.8 | 62.5% | 3.8% | 37.2% | $1,500,000 | Portal |
-| 3 | **Devin Carter** | PG | 119 | 95 | +6.2 | 61.0% | 3.2% | 35.8% | $1,600,000 | Portal |
-| 4 | Taylen Kinney | PF | 109 | 101 | +2.1 | 54.5% | 9.0% | 32.0% | $1,200,000 | Freshman |
-| 5 | **Miles Byrd** | SG/SF | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 | Portal |
-| 6 | Elmarko Jackson | G | 113 | 99 | +2.5 | 57.5% | 3.0% | 34.5% | $500,000 | Returning |
-| 7 | Jamari McDowell | SF | 110 | 100 | +2.0 | 56.5% | 6.0% | 34.0% | $350,000 | Returning |
+| 2 | **Elliot Cadeau** | PG | 115 | 98 | +4.0 | 59.4% | 2.5% | 37.3% | $1,100,000 | Portal |
+| 3 | **Ian Jackson** | SG | 115 | 99 | +4.0 | 59.2% | 3.5% | 35.3% | $950,000 | Portal |
+| 4 | Taylen Kinney | PG | 108 | 101 | +1.9 | 54.8% | 2.2% | 35.5% | $1,200,000 | Freshman |
+| 5 | Davion Adkins | C/PF | 106 | 102 | +1.0 | 54.5% | 9.0% | — | $700,000 | Freshman |
+| 6 | Trent Perry | SF | 104 | 102 | +0.9 | 52.0% | 4.8% | 33.0% | $400,000 | Freshman |
+| 7 | Elmarko Jackson | G | 110 | 100 | +1.8 | 56.0% | 2.5% | 37.2% | $500,000 | Returning |
 
-**Total NIL: $7,150,000** *(well under the $10.5M budget — $3.35M reserve, enough to add a 3rd portal piece or upgrade one slot)*
+**Total NIL: $5,950,000** *($4.55M reserve — Kansas could add a 4th portal piece or include McDowell + Barnett)*
 
 ### Projected Team Performance — Scenario B
 
-| Metric | Projection (Broome) | Projection (R. Jones) | Context |
+| Metric | Projection (Okpara) | Projection (R. Jones) | Context |
 |---|---|---|---|
-| Adj. Offensive Rating | **~118.8** | **~117.1** | Top 5–15 |
-| Adj. Defensive Rating | **~96.0** | **~96.8** | Top 5–10 |
-| Net Rating | **+22.8** | **+20.3** | Top 5–15 |
-| Offensive Rebound Rate | **~9.4%** | **~8.8%** | Strong |
-| 3-Point % | **~36.0%** | **~36.0%** | Solid spacing |
-| **Est. KenPom Range** | **Top 3–8** | **Top 10–18** | — |
+| Adj. Offensive Rating | **~115.5** | **~116.2** | Top 20–35 |
+| Adj. Defensive Rating | **~95.2** | **~96.5** | Top 5–15 |
+| Net Rating | **+20.3** | **+19.7** | Top 15–25 |
+| Offensive Rebound Rate | **~8.4%** | **~8.6%** | Above avg |
+| 3-Point % | **~36.4%** | **~36.4%** | Solid spacing |
+| **Est. KenPom Range** | **Top 15–25** | **Top 15–30** | — |
+
+> Scenario B projects lower than Scenario A because Bidunga's defensive anchor (+DRtg impact) is genuinely elite and hard to replace. Okpara is the best available substitute but the net defensive drop is meaningful.
 
 ---
 
 # Scenario Comparison
 
-| | Scenario A | Scenario B (Broome) | Scenario B (R. Jones) |
+| | Scenario A | Scenario B (Okpara) | Scenario B (R. Jones) |
 |---|---|---|---|
-| **Net Rating** | +21.1 | **+22.8** | +20.3 |
-| **KenPom Range** | Top 5–10 | **Top 3–8** | Top 10–18 |
-| **ORB Rate** | 8.9% | **9.4%** | 8.8% |
-| **NIL Spend** | ~$8.7M | ~$8.7M | **~$7.2M** |
-| **Budget Efficiency** | Good | Good | **Best** |
-| **Risk** | Low | Medium (Broome NBA?) | **Low** |
+| **Net Rating** | **+21.5** | +20.3 | +19.7 |
+| **KenPom Range** | **Top 5–15** | Top 15–25 | Top 15–30 |
+| **ORB Rate** | **9.1%** | 8.4% | 8.6% |
+| **NIL Spend** | ~$7.4M | ~$6.2M | **~$6.0M** |
+| **Budget Efficiency** | Good | **Best** | **Best** |
+| **Risk** | **Low** | Low–Medium | Low–Medium |
 
-**Bottom line:** All three roster configurations project as Big 12 title contenders and realistic Final Four teams. The gap between scenarios is smaller than the Bidunga retention question suggests — the key is executing on **Carter + Davis** in either scenario, as they appear on every optimal roster.
+**Bottom line (updated):** The calculus has shifted significantly from the initial analysis. Bidunga is now definitively the most valuable player on the roster — Big 12 Defensive POY, the kind of defensive anchor that takes years to replace. **Scenario A is now clearly preferred** by every efficiency metric.
 
-If Bidunga leaves but Broome is available, **Scenario B (Broome) is the highest ceiling** by every metric. If the choice is Scenario A vs. Scenario B with a non-Broome center, **Scenario A wins on efficiency and risk.**
+Scenario B is viable but projects as a Top 15–25 team rather than a Top 5–15 team — a meaningful difference for Final Four ambitions. The premium guard market collapsed (Carter, Davis, Hepburn, Tre Johnson all drafted), which means both scenarios are working from a thinner portal pool than anticipated.
+
+**The single most important recruiting priority regardless of scenario: keep Flory Bidunga in Lawrence.**
 
 ---
 
-# Undervalued Targets — Summary
+# Undervalued Targets — Summary (Updated)
 
-These players are analytically identified as likely underpriced relative to their production:
+Several prior undervalued targets are no longer available (Davis to G League, Pack likely declaring for draft). Updated list:
 
 | Player | Pos | School | Why Undervalued | Market Gap Est. | Priority |
 |---|---|---|---|---|---|
-| **Johnell Davis** | SG | FAU | Mid-major discount; top-20 ORtg nationally | $400–700K below P4 equivalent | **Both scenarios** |
-| **Rubin Jones** | C | Cincinnati | Mid-major big; elite ORB/block rates ignored by market | $700K–$1.5M below P4 big equivalent | **Scenario B** |
-| **Nijel Pack** | PG | Miami | Elite 3P% at high volume; not competing for big NIL | $300–500K below equivalent shooter | **Depth add** |
-| **Tre Carroll** | SF | Wake Forest | Wing at mid-market school; strong 3P% underpriced | $200–400K below P4 wing | **Scenario A** |
-| **Miles Byrd** | SG/SF | SDSU | SDSU defensive pedigree not priced into NIL market | $200–400K below P4 wing | **Scenario B** |
+| **Rubin Jones** | C | Cincinnati | Mid-major big; elite ORB/blk% ignored by market — *verify availability* | $700K–$1.5M below P4 big | **Scenario B** |
+| **Ian Jackson** | SG | St. John's | Transferred from UNC; not commanding top-market NIL despite solid metrics | $200–400K below P4 equivalent | **Both scenarios** |
+| **Tre Carroll** | SF | Wake Forest | Wing at ACC non-major program; 38.8% 3P underpriced — *verify availability* | $200–400K below P4 wing | **Scenario A depth** |
+| **Nijel Pack** | PG | Oklahoma | 45.2% 3P / 16.5 PPG breakout — if he withdraws from draft, immediate priority | Elite value if available | **Both — if available** |
+| **Felix Okpara** | C | Tennessee | SEC All-Def big at $1.3M is underpriced vs. equivalent defensive anchors | $300–600K below market | **Scenario B priority** |
 
 ---
 
 # Full Portal Target Rankings
 
-*Ranked by Team Efficiency Score (TES) — composite weighted for Bill Self's Hi-Lo system (defense 30%, offense 25%, TS% 15%, ORB% 15%, BPM 10%, 3P% 5%). All players treated as available.*
+*Updated March 2026 with 2025-26 season actuals. Players confirmed in NBA / G League have been removed.*
+*Ranked by Team Efficiency Score (TES) — weighted for Bill Self's Hi-Lo system (defense 30%, offense 25%, TS% 15%, ORB% 15%, BPM 10%, 3P% 5%).*
 
-> **Tier key:** ⭐ Undervalued (analytically priced below market) | Premium | Value | Deep Value
+> **Availability key:** ✅ Likely available | ⚠️ Draft risk | ❓ Verify status | ❌ No longer in college
 
 ### Centers & Power Forwards
 
-| Rank | Player | Pos | School | ORtg | DRtg | BPM | TS% | ORB% | Blk% | NIL Est. | Fit | Tier |
+| Rank | Player | Pos | School (2025-26) | ORtg | DRtg | BPM | TS% | ORB% | Blk% | NIL Est. | Fit | Avail. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Johni Broome | PF/C | Auburn | 122 | 93 | +8.4 | 63.5% | 14.5% | 9.5% | $2,600,000 | A+ | Premium |
-| 2 | Kam Jones | C | Marquette | 120 | 95 | +7.1 | 63.0% | 13.8% | 12.0% | $2,200,000 | A+ | Premium |
-| 3 | Felix Okpara | C | Ohio State | 115 | 94 | +5.6 | 59.0% | 11.8% | 13.5% | $1,400,000 | A+ | Value |
-| 4 | Rubin Jones | C | Cincinnati | 116 | 97 | +5.2 | 61.5% | 12.2% | 10.8% | $1,100,000 | A+ | ⭐ Undervalued |
-| 5 | Trevon Brazile | PF | Arkansas | 116 | 97 | +5.0 | 59.5% | 12.0% | 8.0% | $1,200,000 | A+ | Value |
-| 6 | Malik Reneau | PF | Indiana | 117 | 98 | +4.8 | 60.0% | 10.5% | 5.5% | $1,100,000 | A+ | Value |
-| 7 | Darius Acuff Jr. | PF | Tennessee | 114 | 98 | +4.1 | 59.0% | 9.8% | 6.2% | $950,000 | A | Value |
-| 8 | Yanic Konan Niederhauser | C | Utah State | 112 | 98 | +4.2 | 58.5% | 11.2% | 11.8% | $800,000 | A | ⭐ Undervalued |
-| 9 | Thomas Haugh | PF | Duke | 113 | 99 | +3.5 | 58.2% | 8.5% | 4.2% | $900,000 | A | Value |
-| 10 | Fousseyni Traore | PF/C | Minnesota | 113 | 98 | +4.0 | 57.5% | 13.0% | 7.5% | $850,000 | A | Value |
-| 11 | Brandon Garrison | C | Michigan | 113 | 100 | +3.8 | 58.0% | 11.0% | 9.5% | $800,000 | A | Deep Value |
-| 12 | Braxton Meah | C | Washington | 110 | 100 | +3.2 | 57.0% | 10.8% | 10.5% | $700,000 | A | ⭐ Undervalued |
-| 13 | Aday Mara | C | Charlotte | 108 | 101 | +3.0 | 55.5% | 9.8% | 12.5% | $550,000 | B+ | Deep Value |
+| 1 | **Felix Okpara** | C | Tennessee | 113 | 93 | +4.8 | 58.0% | 11.2% | 13.8% | $1,300,000 | A+ | ✅ |
+| 2 | **Malik Reneau** | PF | Miami (FL) | 120 | 97 | +6.2 | 62.0% | 10.8% | 5.8% | $2,000,000 | A+ | ⚠️ Draft |
+| 3 | **Trevon Brazile** | PF | Arkansas | 116 | 97 | +5.2 | 60.0% | 11.8% | 7.8% | $1,400,000 | A+ | ⚠️ Draft |
+| 4 | **Rubin Jones** | C | Cincinnati | 116 | 97 | +5.2 | 61.5% | 12.2% | 10.8% | $1,100,000 | A+ | ❓ Verify |
+| 5 | **Yanic Konan Niederhauser** | C | Utah State | 112 | 98 | +4.2 | 58.5% | 11.2% | 11.8% | $750,000 | A | ❓ Verify |
+| 6 | **Thomas Haugh** | PF | Duke | 113 | 99 | +3.5 | 58.2% | 8.5% | 4.2% | $900,000 | A | ❓ Verify |
+| 7 | **Brandon Garrison** | C | Kentucky | 111 | 100 | +3.2 | 56.8% | 10.8% | 9.2% | $700,000 | A | ✅ |
+| — | ~~Johni Broome~~ | — | ~~Auburn~~ | — | — | — | — | — | — | — | — | ❌ NBA (Sixers) |
+| — | ~~Kam Jones~~ | — | ~~Marquette~~ | — | — | — | — | — | — | — | — | ❌ NBA (Pacers) |
+| — | ~~Darius Acuff Jr.~~ | — | ~~Arkansas~~ | — | — | — | — | — | — | — | — | ❌ Top-3 Draft Pick |
+| — | ~~Fousseyni Traore~~ | — | ~~BYU~~ | — | — | — | — | — | — | — | — | ❌ Pro (France) |
+| — | ~~Braxton Meah~~ | — | ~~Nebraska~~ | — | — | — | — | — | — | — | — | ❌ Eligibility done |
 
 ### Wings & Small Forwards
 
-| Rank | Player | Pos | School | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL Est. | Fit | Tier |
+| Rank | Player | Pos | School (2025-26) | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL Est. | Fit | Avail. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | RJ Luis Jr. | SF | UConn | 118 | 96 | +5.5 | 60.0% | 6.2% | 36.2% | $1,400,000 | A+ | Premium |
-| 2 | Miles Byrd | SG/SF | SDSU | 116 | 97 | +4.4 | 59.8% | 4.8% | 37.5% | $900,000 | A | ⭐ Undervalued |
-| 3 | Boogie Fland | SG | Arkansas | 117 | 98 | +4.9 | 59.5% | 3.5% | 36.0% | $1,200,000 | A | Value |
-| 4 | Cam Christie | SF | UCLA | 115 | 98 | +4.0 | 59.0% | 5.0% | 37.8% | $950,000 | A | Value |
-| 5 | Kobe Johnson | SF | USC | 113 | 97 | +3.6 | 57.8% | 5.5% | 35.5% | $800,000 | A | Value |
-| 6 | Keshad Johnson | SG/SF | Arizona | 113 | 98 | +3.2 | 57.5% | 5.2% | 35.2% | $700,000 | A | Value |
-| 7 | Jaxson Robinson | SG/SF | Arkansas | 114 | 99 | +3.5 | 58.8% | 4.5% | 37.2% | $750,000 | A | Value |
-| 8 | Andrej Stojakovic | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 3.8% | 39.0% | $800,000 | A | ⭐ Undervalued |
-| 9 | Tre Carroll | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $700,000 | A | ⭐ Undervalued |
-| 10 | Adou Thiero | SF | Arkansas | 112 | 100 | +2.9 | 57.0% | 6.8% | 34.2% | $550,000 | A | Deep Value |
-| 11 | Silas Demary Jr. | SG/SF | Georgia Tech | 114 | 101 | +3.0 | 58.0% | 4.2% | 35.8% | $650,000 | A | Deep Value |
+| 1 | **Miles Byrd** | SG/SF | San Diego St. | 113 | 96 | +4.0 | 57.8% | 4.8% | 30.8% | $700,000 | B+ | ⚠️ Draft |
+| 2 | **Keshad Johnson** | SG/SF | Arizona | 113 | 98 | +3.2 | 57.5% | 5.2% | 35.2% | $700,000 | A | ❓ Verify |
+| 3 | **Andrej Stojakovic** | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 3.8% | 39.0% | $750,000 | A | ❓ Verify |
+| 4 | **Tre Carroll** | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $650,000 | A | ❓ Verify |
+| 5 | **Silas Demary Jr.** | SG/SF | Georgia Tech | 114 | 101 | +3.0 | 58.0% | 4.2% | 35.8% | $600,000 | A | ❓ Verify |
+| — | ~~Miles Byrd~~ (note) | — | *Fit grade dropped: 3P% fell to 30.8%* | — | — | — | — | — | — | — | — | — |
+| — | ~~RJ Luis Jr.~~ | — | ~~St. John's~~ | — | — | — | — | — | — | — | — | ❌ NBA (Jazz org) |
+| — | ~~Cam Christie~~ | — | ~~Minnesota~~ | — | — | — | — | — | — | — | — | ❌ NBA (Clippers) |
+| — | ~~Kobe Johnson~~ | — | ~~UCLA~~ | — | — | — | — | — | — | — | — | ❌ G League |
+| — | ~~Adou Thiero~~ | — | ~~Arkansas~~ | — | — | — | — | — | — | — | — | ❌ NBA (Lakers) |
+| — | ~~Jaxson Robinson~~ | — | ~~Kentucky~~ | — | — | — | — | — | — | — | — | ❌ G League |
+| — | ~~Boogie Fland~~ | — | ~~Florida~~ | — | — | — | — | — | — | — | — | ❌ Returning to Florida |
 
 ### Guards
 
-| Rank | Player | Pos | School | ORtg | DRtg | BPM | TS% | 3P% | Stl% | NIL Est. | Fit | Tier |
+| Rank | Player | Pos | School (2025-26) | ORtg | DRtg | BPM | TS% | 3P% | APG | NIL Est. | Fit | Avail. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Johnell Davis | SG | FAU | 121 | 97 | +6.8 | 62.5% | 37.2% | 2.8% | $1,500,000 | A+ | ⭐ Undervalued |
-| 2 | Devin Carter | PG | Providence | 119 | 95 | +6.2 | 61.0% | 35.8% | 3.0% | $1,600,000 | A+ | Premium |
-| 3 | Tre Johnson | SG | Texas | 118 | 100 | +5.1 | 61.8% | 36.8% | 1.8% | $2,000,000 | A | Premium |
-| 4 | RJ Davis | G | North Carolina | 118 | 98 | +4.8 | 60.8% | 37.8% | 2.4% | $1,300,000 | A | Premium |
-| 5 | Ian Jackson | SG | North Carolina | 117 | 99 | +4.5 | 60.0% | 36.2% | 2.0% | $1,100,000 | A | Value |
-| 6 | Chucky Hepburn | PG | Wisconsin | 115 | 97 | +4.0 | 59.2% | 36.5% | 2.8% | $1,000,000 | A+ | Value |
-| 7 | Nijel Pack | PG | Miami | 116 | 98 | +4.2 | 60.0% | 38.5% | 2.6% | $900,000 | A | ⭐ Undervalued |
-| 8 | Dug McDaniel | PG | Michigan | 116 | 99 | +3.8 | 58.8% | 35.2% | 2.6% | $900,000 | A | Value |
-| 9 | Jeremiah Fears | G | Oklahoma | 115 | 100 | +3.5 | 58.5% | 34.5% | 2.2% | $950,000 | A | Value |
-| 10 | Tamar Bates | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 2.0% | $750,000 | A | Value |
-| 11 | Caleb Love | SG | Arizona | 115 | 101 | +3.2 | 58.2% | 35.2% | 1.8% | $1,200,000 | A | Premium |
-| 12 | Javian McCollum | G | South Carolina | 116 | 100 | +3.6 | 59.2% | 35.8% | 2.2% | $750,000 | B+ | Value |
-| 13 | Elliot Cadeau | PG | North Carolina | 113 | 99 | +3.0 | 57.8% | 33.8% | 2.6% | $800,000 | A | Value |
-| 14 | CJ Fredrick | SG | Iowa | 118 | 100 | +3.8 | 61.8% | 41.5% | 1.4% | $600,000 | B+ | ⭐ Undervalued |
-| 15 | Andrej Stojakovic | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 39.0% | 1.6% | $800,000 | A | ⭐ Undervalued |
+| 1 | **Nijel Pack** | PG | Oklahoma | 118 | 98 | +5.2 | 61.8% | 45.2% | 3.0 | $1,400,000 | A+ | ⚠️ Draft |
+| 2 | **Elliot Cadeau** | PG | Michigan | 115 | 98 | +4.0 | 59.4% | 37.3% | 6.2 | $1,100,000 | A+ | ⚠️ Draft |
+| 3 | **Ian Jackson** | SG | St. John's | 115 | 99 | +4.0 | 59.2% | 35.3% | 1.3 | $950,000 | A | ✅ |
+| 4 | **Dug McDaniel** | PG | Memphis | 114 | 100 | +3.5 | 58.2% | 32.9% | 4.6 | $800,000 | B+ | ✅ |
+| 5 | **Tamar Bates** | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 1.8 | $700,000 | A | ❓ Verify |
+| 6 | **Andrej Stojakovic** | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 39.0% | 1.5 | $750,000 | A | ❓ Verify |
+| 7 | **Javian McCollum** | G | South Carolina | 114 | 101 | +3.2 | 58.2% | 35.0% | 2.2 | $650,000 | B+ | ❓ Verify |
+| 8 | **CJ Fredrick** | SG | Iowa | 118 | 100 | +3.8 | 61.8% | 41.5% | 1.0 | $500,000 | B+ | ❓ Verify |
+| — | ~~Devin Carter~~ | — | ~~Providence~~ | — | — | — | — | — | — | — | — | ❌ NBA (Kings, 2024) |
+| — | ~~Johnell Davis~~ | — | ~~Arkansas~~ | — | — | — | — | — | — | — | — | ❌ G League |
+| — | ~~Tre Johnson~~ | — | ~~Texas~~ | — | — | — | — | — | — | — | — | ❌ NBA (Wizards) |
+| — | ~~RJ Davis~~ | — | ~~UNC~~ | — | — | — | — | — | — | — | — | ❌ G League |
+| — | ~~Chucky Hepburn~~ | — | ~~Louisville~~ | — | — | — | — | — | — | — | — | ❌ NBA 2-way (Raptors) |
+| — | ~~Jeremiah Fears~~ | — | ~~Oklahoma~~ | — | — | — | — | — | — | — | — | ❌ NBA (Pelicans, #7 pick) |
+| — | ~~Caleb Love~~ | — | ~~Arizona~~ | — | — | — | — | — | — | — | — | ❌ NBA 2-way (Blazers) |
 
 ---
 
