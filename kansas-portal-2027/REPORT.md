@@ -80,7 +80,7 @@ All player evaluations use efficiency metrics from **BartTorvik** and **EvanMiya
 
 ## Roster Needs
 
-With Bidunga locked in and the freshman class providing guard (Kinney), wing (Perry), interior (Adkins), and shooting (Barnett) depth, the picture is better than it initially looks. **The single biggest need is a scoring guard to replace Peterson's 19.5 PPG** — and the portal market for that profile is thinner than in prior years (Carter, Davis, Tre Johnson, and Hepburn are all in the NBA or G League).
+With Bidunga locked in and the freshman class providing guard (Kinney), wing (Perry), interior (Adkins), and shooting (Barnett) depth, the picture is better than it initially looks. **The single biggest need is a scoring guard to replace Peterson's 19.5 PPG** — and the 2026 portal offers fewer elite scoring guards than recent cycles. Kansas must prioritize efficiency and value over marquee names.
 
 | Slot | Priority | What We Need |
 |---|---|---|
@@ -90,8 +90,6 @@ With Bidunga locked in and the freshman class providing guard (Kinney), wing (Pe
 > **Note:** With only $1.4M in portal budget, Kansas must prioritize a single high-impact add or two value pieces. Overspending in Scenario A is not an option given Bidunga's NIL anchor.
 
 ## Recommended Portal Targets — Scenario A
-
-> **Market context:** Several previously top-ranked targets are no longer available — Devin Carter (Kings, 2024 pick), Johnell Davis (G League), Chucky Hepburn (Raptors), and Tre Johnson (Wizards) are all professional. The 2026 guard portal is thinner. Kansas must be creative.
 
 ### First Priority: Scoring Guard / Wing (Peterson Replacement)
 
@@ -111,17 +109,17 @@ Jackson transferred from UNC to St. John's and had a solid sophomore season (9.6
 
 If Kansas goes lean in Scenario A and lets the freshman class develop, Jackson alone fills the most critical hole at a budget-friendly price. Remaining $450K becomes a buffer or a developmental add.
 
-### Budget Path A2 (two adds — stretch to ~$1.4M total):
+### Budget Path A2 (two adds — stretch to ~$1.35M total):
 
-> **Tre Carroll — SF, Wake Forest** `$500,000` *(negotiated; unverified availability)*
+> **Tyler Lundblade — SG/SF, Bellarmine (MVC)** `$400,000` *(estimated; portal entry unconfirmed)*
 
 | ORtg | DRtg | BPM | TS% | 3P% | 3P Rate |
 |---|---|---|---|---|---|
-| 115 | 99 | +3.8 | 58.5% | 38.8% | 50% |
+| 116 | 100 | +3.8 | 60.0% | 40.6% | 55% |
 
-Pure 3-and-D wing who shoots 38.8% from three at a very high rate. At roughly $450–500K — likely achievable given Wake Forest profile — Carroll and Jackson together check both the scoring guard and floor-spacing wing boxes. Availability needs verification.
+Lundblade won MVC Player of the Year in 2025-26 — 15.6 PPG on **40.6% from three**, one of the highest-volume elite shooters in college basketball. At 6'5" he can guard off the ball and space the floor in Self's Hi-Lo. Mid-major discount applies: equivalent production from a P4 program would cost $700K+. One year of eligibility remaining, which incentivizes a move for the right NIL offer. At ~$400K he fits inside the Scenario A portal budget alongside Jackson.
 
-**Fit grade: A** | **Value tier: Value** | **Draft risk: Low**
+**Fit grade: A** | **Value tier: Undervalued** | **Draft risk: Low**
 
 ---
 
@@ -135,11 +133,11 @@ Pure 3-and-D wing who shoots 38.8% from three at a very high rate. At roughly $4
 | 4 | Davion Adkins | C/PF | 106 | 102 | +1.0 | 54.5% | 9.0% | — | $700,000 | Freshman |
 | 5 | Trent Perry | SF | 104 | 102 | +0.9 | 52.0% | 4.8% | 33.0% | $400,000 | Freshman |
 | 6 | Elmarko Jackson | G | 110 | 100 | +1.8 | 56.0% | 2.5% | 37.2% | $500,000 | Returning |
-| 7 | **Tre Carroll** | SF | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $450,000 | Portal |
+| 7 | **Tyler Lundblade** | SG/SF | 116 | 100 | +3.8 | 60.0% | 3.5% | 40.6% | $400,000 | Portal |
 
-*Bold = portal acquisitions | Tre Carroll at negotiated rate (~$450K)*
+*Bold = portal acquisitions | Lundblade at estimated mid-major rate (~$400K)*
 
-**Total NIL: $7,400,000** *(under $8M budget — $600K reserve)*
+**Total NIL: $7,350,000** *(under $8M budget — $650K reserve)*
 
 ### Projected Team Performance — Scenario A
 
@@ -185,8 +183,6 @@ Pure 3-and-D wing who shoots 38.8% from three at a very high rate. At roughly $4
 
 ## Recommended Portal Targets — Scenario B
 
-> **Updated market context:** Johni Broome (drafted by Sixers in 2025), Kam Jones (Pacers), and Devin Carter (Kings) are all no longer in college. The center and premium guard markets are materially thinner than prior projections. Kansas must be efficient with $7.1M.
-
 ### First Priority: Center (Non-Negotiable)
 
 > **Option 1: Felix Okpara — C, Tennessee** `$1,300,000` ⭐ *Best available center*
@@ -201,15 +197,15 @@ Okpara transferred from Ohio State to Tennessee and earned **SEC All-Defensive T
 
 ---
 
-> **Option 2: Rubin Jones — C, Cincinnati** `$1,100,000` ⭐ *Undervalued — verify availability*
+> **Option 2: Thomas Haugh — PF, Florida** `$1,500,000` ⚠️ *Draft risk HIGH — pursue only if he withdraws*
 
 | ORtg | DRtg | BPM | TS% | ORB% | Block% |
 |---|---|---|---|---|---|
-| 116 | 97 | +5.2 | 61.5% | 12.2% | 10.8% |
+| 118 | 97 | +5.5 | 61.5% | 8.5% | 4.2% |
 
-If Jones is still active at Cincinnati, he's the most undervalued big in the portal — elite ORB% (12.2%) and block rate (10.8%) at a mid-major program means he's **$700K–$1.5M below what an equivalent P4 big would command.** He scores efficiently on putbacks and short rolls. Must verify 2025-26 enrollment and portal status before pursuing.
+Haugh earned **All-SEC First Team and consensus second-team All-American** honors in 2025-26 — the best stretch-4 in college basketball. At 6'9" he can guard 3–5, space the floor, and function as either the Hi-Man or a mobile 4. NBA draft interest is substantial (lottery-level attention per scouts), so a return to college is unlikely. However, if he withdraws, he'd be the top Hi-Man option on the board at any price. Monitor his declaration decision.
 
-**Fit grade: A+** | **Value tier: Undervalued** | **Draft risk: Low**
+**Fit grade: A+** | **Value tier: Premium (if available)** | **Draft risk: HIGH**
 
 ---
 
@@ -291,7 +287,7 @@ Pack had a **breakout final season** at Oklahoma — 16.5 PPG, 45.2% from three,
 
 **Bottom line (updated):** The calculus has shifted significantly from the initial analysis. Bidunga is now definitively the most valuable player on the roster — Big 12 Defensive POY, the kind of defensive anchor that takes years to replace. **Scenario A is now clearly preferred** by every efficiency metric.
 
-Scenario B is viable but projects as a Top 15–25 team rather than a Top 5–15 team — a meaningful difference for Final Four ambitions. The premium guard market collapsed (Carter, Davis, Hepburn, Tre Johnson all drafted), which means both scenarios are working from a thinner portal pool than anticipated.
+Scenario B is viable but projects as a Top 15–25 team rather than a Top 5–15 team — a meaningful difference for Final Four ambitions. The 2026 portal offers fewer elite scoring guards than recent cycles, which means both scenarios require creative value identification — mid-major targets with defensive credentials and floor spacing are the key resource.
 
 **The single most important recruiting priority regardless of scenario: keep Flory Bidunga in Lawrence.**
 
@@ -299,13 +295,12 @@ Scenario B is viable but projects as a Top 15–25 team rather than a Top 5–15
 
 # Undervalued Targets — Summary (Updated)
 
-Several prior undervalued targets are no longer available (Davis to G League, Pack likely declaring for draft). Updated list:
-
 | Player | Pos | School | Why Undervalued | Market Gap Est. | Priority |
 |---|---|---|---|---|---|
 | **Felix Okpara** | C | Tennessee | SEC All-Def big at $1.3M is underpriced vs. equivalent defensive anchors | $300–600K below market | **Scenario B priority** |
 | **Ian Jackson** | SG | St. John's | Transferred from UNC; not commanding top-market NIL despite solid metrics | $200–400K below P4 equivalent | **Both scenarios** |
-| **Tre Carroll** | SF | Wake Forest | Wing at ACC non-major program; 38.8% 3P underpriced — *verify availability* | $200–400K below P4 wing | **Scenario A depth** |
+| **Tyler Lundblade** | SG/SF | Bellarmine (MVC) | MVC POY with 40.6% 3P — mid-major discount makes him a budget-friendly floor spacer | $300–500K below P4 equivalent | **Scenario A depth** |
+| **Silas Demary Jr.** | G/SF | UConn | Big East All-Defensive + 40.5% 3P at UConn — not yet commanding full P4 superstar NIL | $300–500K below market rate | **Scenario B wing** |
 | **Nijel Pack** | PG | Oklahoma | 45.2% 3P / 16.5 PPG breakout — if he withdraws from draft, immediate priority | Elite value if available | **Both — if available** |
 
 ---
@@ -324,18 +319,22 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 | 1 | **Felix Okpara** | C | Tennessee | 113 | 93 | +4.8 | 58.0% | 11.2% | 13.8% | $1,300,000 | A+ | ✅ |
 | 2 | **Malik Reneau** | PF | Miami (FL) | 120 | 97 | +6.2 | 62.0% | 10.8% | 5.8% | $2,000,000 | A+ | ⚠️ Draft |
 | 3 | **Trevon Brazile** | PF | Arkansas | 116 | 97 | +5.2 | 60.0% | 11.8% | 7.8% | $1,400,000 | A+ | ⚠️ Draft |
-| 4 | **Brandon Garrison** | C | Kentucky | 111 | 100 | +3.2 | 56.8% | 10.8% | 9.2% | $700,000 | A | ❓ Verify |
-| 5 | **Yanic Konan Niederhauser** | C | Utah State | 112 | 98 | +4.2 | 58.5% | 11.2% | 11.8% | $750,000 | A | ❓ Verify |
-| 6 | **Thomas Haugh** | PF | Duke | 113 | 99 | +3.5 | 58.2% | 8.5% | 4.2% | $900,000 | A | ❓ Verify |
+| 4 | **Thomas Haugh** | PF | Florida | 118 | 97 | +5.5 | 61.5% | 8.5% | 4.2% | $1,500,000 | A+ | ⚠️ Draft |
+| 5 | **Brandon Garrison** | C | Kentucky | 111 | 100 | +3.2 | 56.8% | 10.8% | 9.2% | $700,000 | A | ❓ Verify |
+| 6 | **Adlan Elamin** | PF | Utah State | 108 | 100 | +2.0 | 57.0% | 8.0% | 7.0% | $450,000 | B+ | ❓ Verify |
+
+*Thomas Haugh: All-SEC First Team, consensus 2nd-team All-American (Florida). Draft interest is significant — pursue only if he withdraws. Adlan Elamin: true freshman, 6'9" / 7'0" wingspan, 3 years remaining — deep value / upside play.*
 
 ### Wings & Small Forwards
 
 | Rank | Player | Pos | School (2025-26) | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL Est. | Fit | Avail. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Tre Carroll** | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $650,000 | A | ❓ Verify |
-| 2 | **Keshad Johnson** | SG/SF | Arizona | 113 | 98 | +3.2 | 57.5% | 5.2% | 35.2% | $700,000 | A | ❓ Verify |
-| 3 | **Silas Demary Jr.** | SG/SF | Georgia Tech | 114 | 101 | +3.0 | 58.0% | 4.2% | 35.8% | $600,000 | A | ❓ Verify |
+| 1 | **Silas Demary Jr.** | G/SF | UConn | 116 | 97 | +4.2 | 60.5% | 4.5% | 40.5% | $800,000 | A+ | ❓ Verify |
+| 2 | **Kwame Evans Jr.** | SF | Oregon | 112 | 98 | +3.0 | 57.0% | 5.5% | 33.0% | $900,000 | B+ | ⚠️ Portal announced |
+| 3 | **Tre Carroll** | SF | Xavier | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $650,000 | A | ⚠️ Eligibility risk |
 | 4 | **Miles Byrd** | SG/SF | San Diego St. | 113 | 96 | +4.0 | 57.8% | 4.8% | 30.8% | $700,000 | B+ | ⚠️ Draft + 3P% concern |
+
+*Silas Demary Jr.: Big East All-Defensive Team, All-Big East 2025-26 at UConn (10.4 PPG / 6.1 APG / 40.5% 3P). Verified 2025-26 stats. Kwame Evans Jr.: McDonald's AA, 6'7" — portal entry announced; 3P% (33%) borderline on Self's threshold. Tre Carroll: transferred from FAU → Xavier; eligibility may be exhausted after 2025-26 — verify before pursuing.*
 
 ### Guards
 
@@ -345,9 +344,10 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 | 2 | **Elliot Cadeau** | PG | Michigan | 115 | 98 | +4.0 | 59.4% | 37.3% | 6.2 | $1,100,000 | A+ | ⚠️ Draft |
 | 3 | **Ian Jackson** | SG | St. John's | 115 | 99 | +4.0 | 59.2% | 35.3% | 1.3 | $950,000 | A | ✅ |
 | 4 | **Dug McDaniel** | PG | Memphis | 114 | 100 | +3.5 | 58.2% | 32.9% | 4.6 | $800,000 | B+ | ✅ |
-| 5 | **Andrej Stojakovic** | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 39.0% | 1.5 | $750,000 | A | ❓ Verify |
-| 6 | **Tamar Bates** | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 1.8 | $700,000 | A | ❓ Verify |
-| 7 | **Javian McCollum** | G | South Carolina | 114 | 101 | +3.2 | 58.2% | 35.0% | 2.2 | $650,000 | B+ | ❓ Verify |
+| 5 | **Tyler Lundblade** | SG/SF | Bellarmine | 116 | 100 | +3.8 | 60.0% | 40.6% | 2.5 | $400,000 | A | ❓ Verify |
+| 6 | **Ryan Prather Jr.** | G | Horizon League | 115 | 101 | +3.5 | 58.0% | 36.0% | 3.6 | $350,000 | B+ | ❓ Verify |
+
+*Tyler Lundblade: MVC Player of the Year 2025-26, 40.6% 3P on high volume, 1 year remaining — mid-major undervalue. Ryan Prather Jr.: nation-leading assist-to-turnover ratio (4.44), 15.7 PPG, 6'5" frame. Dug McDaniel: 3P% (32.9%) below Self's threshold — fit grade B+ reflects this.*
 
 ---
 
