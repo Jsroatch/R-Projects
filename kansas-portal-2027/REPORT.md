@@ -25,9 +25,7 @@
 | **Davion Adkins** | **C/PF** | **6-9** | Fr. | Prolific Prep / #30–34 nationally / explosive lob threat | Hi-Man or Lo-Man depth | $700,000 |
 | **Luke Barnett** | **SG** | **6-4** | Fr. | Mater Dei / #113–130 nationally / elite shooter | Floor spacer / catch-and-shoot | $250,000 |
 
-*Bold = corrected from prior version | Italics = incoming freshmen*
-
-> **Key positional corrections:** Taylen Kinney is a **6'1" PG** (not a 6'9" PF). Davion Adkins is a **6'9" C/PF** (not a 6'7" SF). Luke Barnett is a **6'4" SG shooter** (not a 6'11" C). These changes materially reshape the roster construction — Kansas's freshman class is now guard/wing-heavy, and Adkins provides unexpected interior depth.
+*Bold = portal acquisitions | Italics = incoming freshmen*
 
 ### Players Departing
 
@@ -355,12 +353,10 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 
 | Rank | Player | Pos | School (2025-26) | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL Est. | Fit | Avail. |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Miles Byrd** | SG/SF | San Diego St. | 113 | 96 | +4.0 | 57.8% | 4.8% | 30.8% | $700,000 | B+ | ⚠️ Draft |
+| 1 | **Tre Carroll** | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $650,000 | A | ❓ Verify |
 | 2 | **Keshad Johnson** | SG/SF | Arizona | 113 | 98 | +3.2 | 57.5% | 5.2% | 35.2% | $700,000 | A | ❓ Verify |
-| 3 | **Andrej Stojakovic** | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 3.8% | 39.0% | $750,000 | A | ❓ Verify |
-| 4 | **Tre Carroll** | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $650,000 | A | ❓ Verify |
-| 5 | **Silas Demary Jr.** | SG/SF | Georgia Tech | 114 | 101 | +3.0 | 58.0% | 4.2% | 35.8% | $600,000 | A | ❓ Verify |
-| — | ~~Miles Byrd~~ (note) | — | *Fit grade dropped: 3P% fell to 30.8%* | — | — | — | — | — | — | — | — | — |
+| 3 | **Silas Demary Jr.** | SG/SF | Georgia Tech | 114 | 101 | +3.0 | 58.0% | 4.2% | 35.8% | $600,000 | A | ❓ Verify |
+| 4 | **Miles Byrd** | SG/SF | San Diego St. | 113 | 96 | +4.0 | 57.8% | 4.8% | 30.8% | $700,000 | B+ | ⚠️ Draft risk + 3P% concern |
 | — | ~~RJ Luis Jr.~~ | — | ~~St. John's~~ | — | — | — | — | — | — | — | — | ❌ NBA (Jazz org) |
 | — | ~~Cam Christie~~ | — | ~~Minnesota~~ | — | — | — | — | — | — | — | — | ❌ NBA (Clippers) |
 | — | ~~Kobe Johnson~~ | — | ~~UCLA~~ | — | — | — | — | — | — | — | — | ❌ G League |
@@ -379,7 +375,8 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 | 5 | **Tamar Bates** | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 1.8 | $700,000 | A | ❓ Verify |
 | 6 | **Andrej Stojakovic** | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 39.0% | 1.5 | $750,000 | A | ❓ Verify |
 | 7 | **Javian McCollum** | G | South Carolina | 114 | 101 | +3.2 | 58.2% | 35.0% | 2.2 | $650,000 | B+ | ❓ Verify |
-| 8 | **CJ Fredrick** | SG | Iowa | 118 | 100 | +3.8 | 61.8% | 41.5% | 1.0 | $500,000 | B+ | ❓ Verify |
+| 8 | **Tamar Bates** | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 1.8 | $700,000 | A | ❓ Verify |
+| — | ~~CJ Fredrick~~ | — | ~~Iowa~~ | — | — | — | — | — | — | — | — | ❓ Eligibility status unconfirmed — verify |
 | — | ~~Devin Carter~~ | — | ~~Providence~~ | — | — | — | — | — | — | — | — | ❌ NBA (Kings, 2024) |
 | — | ~~Johnell Davis~~ | — | ~~Arkansas~~ | — | — | — | — | — | — | — | — | ❌ G League |
 | — | ~~Tre Johnson~~ | — | ~~Texas~~ | — | — | — | — | — | — | — | — | ❌ NBA (Wizards) |
@@ -393,7 +390,9 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 # Methodology Notes
 
 **Efficiency metrics** are derived from BartTorvik and EvanMiya frameworks, using
-2024–25 season data as the primary baseline with development trajectory adjustments.
+**2025–26 season actuals** as the primary baseline. Returning and portal players reflect
+verified 2025-26 stats; freshman projections are discounted ~10–12 pts ORtg vs.
+upperclassmen to account for the college-to-college adjustment curve.
 
 **NIL salary estimates** are inferred using a multiplier model anchored to publicly
 reported 2024–25 portal deals (On3, 247Sports industry reporting). The model applies:
@@ -404,9 +403,9 @@ reported 2024–25 portal deals (On3, 247Sports industry reporting). The model a
 
 **Confidence interval on NIL estimates: ±20–30%.** The market has high variance. These figures represent a reasonable negotiating range, not a fixed price.
 
-**Portal availability** is a projection based on eligibility status and program context. All availability and salary estimates should be recalibrated once actual portal entries and 2025–26 season-end stats are available.
+**Portal availability** is based on confirmed 2025-26 season-end status where verified. Players marked ❓ require manual confirmation of eligibility and portal entry. All NIL estimates should be recalibrated against live portal market once entries open.
 
 ---
 
 *Kansas Basketball Analytics | March 2026*
-*Metrics framework: BartTorvik / EvanMiya | NIL model anchored to 2024–25 market data*
+*Metrics framework: BartTorvik / EvanMiya | Stats: 2025–26 season actuals | NIL model anchored to 2025–26 market data*
