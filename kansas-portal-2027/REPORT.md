@@ -263,30 +263,16 @@ Pack had a **breakout final season** at Oklahoma — 16.5 PPG, 45.2% from three,
 
 **Total NIL: $6,150,000** *(well within $10.5M — $4.35M reserve for Jamari McDowell, Luke Barnett, depth adds, or upgrading a portal slot)*
 
-## Scenario B — Alternate Roster (Budget: Rubin Jones — verify availability)
-
-| # | Player | Pos | ORtg | DRtg | BPM | TS% | ORB% | 3P% | NIL | Source |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Rubin Jones** | C | 116 | 97 | +5.2 | 61.5% | 12.2% | — | $1,100,000 | Portal |
-| 2 | **Elliot Cadeau** | PG | 115 | 98 | +4.0 | 59.4% | 2.5% | 37.3% | $1,100,000 | Portal |
-| 3 | **Ian Jackson** | SG | 115 | 99 | +4.0 | 59.2% | 3.5% | 35.3% | $950,000 | Portal |
-| 4 | Taylen Kinney | PG | 108 | 101 | +1.9 | 54.8% | 2.2% | 35.5% | $1,200,000 | Freshman |
-| 5 | Davion Adkins | C/PF | 106 | 102 | +1.0 | 54.5% | 9.0% | — | $700,000 | Freshman |
-| 6 | Trent Perry | SF | 104 | 102 | +0.9 | 52.0% | 4.8% | 33.0% | $400,000 | Freshman |
-| 7 | Elmarko Jackson | G | 110 | 100 | +1.8 | 56.0% | 2.5% | 37.2% | $500,000 | Returning |
-
-**Total NIL: $5,950,000** *($4.55M reserve — Kansas could add a 4th portal piece or include McDowell + Barnett)*
-
 ### Projected Team Performance — Scenario B
 
-| Metric | Projection (Okpara) | Projection (R. Jones) | Context |
-|---|---|---|---|
-| Adj. Offensive Rating | **~115.5** | **~116.2** | Top 20–35 |
-| Adj. Defensive Rating | **~95.2** | **~96.5** | Top 5–15 |
-| Net Rating | **+20.3** | **+19.7** | Top 15–25 |
-| Offensive Rebound Rate | **~8.4%** | **~8.6%** | Above avg |
-| 3-Point % | **~36.4%** | **~36.4%** | Solid spacing |
-| **Est. KenPom Range** | **Top 15–25** | **Top 15–30** | — |
+| Metric | Projection | Context |
+|---|---|---|
+| Adj. Offensive Rating | **~115.5** | Top 20–35 |
+| Adj. Defensive Rating | **~95.2** | Top 5–15 |
+| Net Rating | **+20.3** | Top 15–25 |
+| Offensive Rebound Rate | **~8.4%** | Above avg |
+| 3-Point % | **~36.4%** | Solid spacing |
+| **Est. KenPom Range** | **Top 15–25** | — |
 
 > Scenario B projects lower than Scenario A because Bidunga's defensive anchor (+DRtg impact) is genuinely elite and hard to replace. Okpara is the best available substitute but the net defensive drop is meaningful.
 
@@ -294,14 +280,14 @@ Pack had a **breakout final season** at Oklahoma — 16.5 PPG, 45.2% from three,
 
 # Scenario Comparison
 
-| | Scenario A | Scenario B (Okpara) | Scenario B (R. Jones) |
-|---|---|---|---|
-| **Net Rating** | **+21.5** | +20.3 | +19.7 |
-| **KenPom Range** | **Top 5–15** | Top 15–25 | Top 15–30 |
-| **ORB Rate** | **9.1%** | 8.4% | 8.6% |
-| **NIL Spend** | ~$7.4M | ~$6.2M | **~$6.0M** |
-| **Budget Efficiency** | Good | **Best** | **Best** |
-| **Risk** | **Low** | Low–Medium | Low–Medium |
+| | Scenario A | Scenario B |
+|---|---|---|
+| **Net Rating** | **+21.5** | +20.3 |
+| **KenPom Range** | **Top 5–15** | Top 15–25 |
+| **ORB Rate** | **9.1%** | 8.4% |
+| **NIL Spend** | ~$7.4M | ~$6.2M |
+| **Budget Efficiency** | Good | **Best** |
+| **Risk** | **Low** | Low–Medium |
 
 **Bottom line (updated):** The calculus has shifted significantly from the initial analysis. Bidunga is now definitively the most valuable player on the roster — Big 12 Defensive POY, the kind of defensive anchor that takes years to replace. **Scenario A is now clearly preferred** by every efficiency metric.
 
@@ -317,20 +303,19 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 
 | Player | Pos | School | Why Undervalued | Market Gap Est. | Priority |
 |---|---|---|---|---|---|
-| **Rubin Jones** | C | Cincinnati | Mid-major big; elite ORB/blk% ignored by market — *verify availability* | $700K–$1.5M below P4 big | **Scenario B** |
+| **Felix Okpara** | C | Tennessee | SEC All-Def big at $1.3M is underpriced vs. equivalent defensive anchors | $300–600K below market | **Scenario B priority** |
 | **Ian Jackson** | SG | St. John's | Transferred from UNC; not commanding top-market NIL despite solid metrics | $200–400K below P4 equivalent | **Both scenarios** |
 | **Tre Carroll** | SF | Wake Forest | Wing at ACC non-major program; 38.8% 3P underpriced — *verify availability* | $200–400K below P4 wing | **Scenario A depth** |
 | **Nijel Pack** | PG | Oklahoma | 45.2% 3P / 16.5 PPG breakout — if he withdraws from draft, immediate priority | Elite value if available | **Both — if available** |
-| **Felix Okpara** | C | Tennessee | SEC All-Def big at $1.3M is underpriced vs. equivalent defensive anchors | $300–600K below market | **Scenario B priority** |
 
 ---
 
 # Full Portal Target Rankings
 
-*Updated March 2026 with 2025-26 season actuals. Players confirmed in NBA / G League have been removed.*
 *Ranked by Team Efficiency Score (TES) — weighted for Bill Self's Hi-Lo system (defense 30%, offense 25%, TS% 15%, ORB% 15%, BPM 10%, 3P% 5%).*
 
-> **Availability key:** ✅ Likely available | ⚠️ Draft risk | ❓ Verify status | ❌ No longer in college
+> **Stats note:** Players marked ✅ have verified 2025-26 season stats. Players marked ❓ show prior-season baseline — confirm current status and refresh stats before pursuing.
+> **Availability key:** ✅ Verified available | ⚠️ Draft risk — monitor closely | ❓ Confirm portal status + refresh stats
 
 ### Centers & Power Forwards
 
@@ -339,15 +324,9 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 | 1 | **Felix Okpara** | C | Tennessee | 113 | 93 | +4.8 | 58.0% | 11.2% | 13.8% | $1,300,000 | A+ | ✅ |
 | 2 | **Malik Reneau** | PF | Miami (FL) | 120 | 97 | +6.2 | 62.0% | 10.8% | 5.8% | $2,000,000 | A+ | ⚠️ Draft |
 | 3 | **Trevon Brazile** | PF | Arkansas | 116 | 97 | +5.2 | 60.0% | 11.8% | 7.8% | $1,400,000 | A+ | ⚠️ Draft |
-| 4 | **Rubin Jones** | C | Cincinnati | 116 | 97 | +5.2 | 61.5% | 12.2% | 10.8% | $1,100,000 | A+ | ❓ Verify |
+| 4 | **Brandon Garrison** | C | Kentucky | 111 | 100 | +3.2 | 56.8% | 10.8% | 9.2% | $700,000 | A | ❓ Verify |
 | 5 | **Yanic Konan Niederhauser** | C | Utah State | 112 | 98 | +4.2 | 58.5% | 11.2% | 11.8% | $750,000 | A | ❓ Verify |
 | 6 | **Thomas Haugh** | PF | Duke | 113 | 99 | +3.5 | 58.2% | 8.5% | 4.2% | $900,000 | A | ❓ Verify |
-| 7 | **Brandon Garrison** | C | Kentucky | 111 | 100 | +3.2 | 56.8% | 10.8% | 9.2% | $700,000 | A | ✅ |
-| — | ~~Johni Broome~~ | — | ~~Auburn~~ | — | — | — | — | — | — | — | — | ❌ NBA (Sixers) |
-| — | ~~Kam Jones~~ | — | ~~Marquette~~ | — | — | — | — | — | — | — | — | ❌ NBA (Pacers) |
-| — | ~~Darius Acuff Jr.~~ | — | ~~Arkansas~~ | — | — | — | — | — | — | — | — | ❌ Top-3 Draft Pick |
-| — | ~~Fousseyni Traore~~ | — | ~~BYU~~ | — | — | — | — | — | — | — | — | ❌ Pro (France) |
-| — | ~~Braxton Meah~~ | — | ~~Nebraska~~ | — | — | — | — | — | — | — | — | ❌ Eligibility done |
 
 ### Wings & Small Forwards
 
@@ -356,13 +335,7 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 | 1 | **Tre Carroll** | SF | Wake Forest | 115 | 99 | +3.8 | 58.5% | 5.5% | 38.8% | $650,000 | A | ❓ Verify |
 | 2 | **Keshad Johnson** | SG/SF | Arizona | 113 | 98 | +3.2 | 57.5% | 5.2% | 35.2% | $700,000 | A | ❓ Verify |
 | 3 | **Silas Demary Jr.** | SG/SF | Georgia Tech | 114 | 101 | +3.0 | 58.0% | 4.2% | 35.8% | $600,000 | A | ❓ Verify |
-| 4 | **Miles Byrd** | SG/SF | San Diego St. | 113 | 96 | +4.0 | 57.8% | 4.8% | 30.8% | $700,000 | B+ | ⚠️ Draft risk + 3P% concern |
-| — | ~~RJ Luis Jr.~~ | — | ~~St. John's~~ | — | — | — | — | — | — | — | — | ❌ NBA (Jazz org) |
-| — | ~~Cam Christie~~ | — | ~~Minnesota~~ | — | — | — | — | — | — | — | — | ❌ NBA (Clippers) |
-| — | ~~Kobe Johnson~~ | — | ~~UCLA~~ | — | — | — | — | — | — | — | — | ❌ G League |
-| — | ~~Adou Thiero~~ | — | ~~Arkansas~~ | — | — | — | — | — | — | — | — | ❌ NBA (Lakers) |
-| — | ~~Jaxson Robinson~~ | — | ~~Kentucky~~ | — | — | — | — | — | — | — | — | ❌ G League |
-| — | ~~Boogie Fland~~ | — | ~~Florida~~ | — | — | — | — | — | — | — | — | ❌ Returning to Florida |
+| 4 | **Miles Byrd** | SG/SF | San Diego St. | 113 | 96 | +4.0 | 57.8% | 4.8% | 30.8% | $700,000 | B+ | ⚠️ Draft + 3P% concern |
 
 ### Guards
 
@@ -372,18 +345,9 @@ Several prior undervalued targets are no longer available (Davis to G League, Pa
 | 2 | **Elliot Cadeau** | PG | Michigan | 115 | 98 | +4.0 | 59.4% | 37.3% | 6.2 | $1,100,000 | A+ | ⚠️ Draft |
 | 3 | **Ian Jackson** | SG | St. John's | 115 | 99 | +4.0 | 59.2% | 35.3% | 1.3 | $950,000 | A | ✅ |
 | 4 | **Dug McDaniel** | PG | Memphis | 114 | 100 | +3.5 | 58.2% | 32.9% | 4.6 | $800,000 | B+ | ✅ |
-| 5 | **Tamar Bates** | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 1.8 | $700,000 | A | ❓ Verify |
-| 6 | **Andrej Stojakovic** | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 39.0% | 1.5 | $750,000 | A | ❓ Verify |
+| 5 | **Andrej Stojakovic** | SG | Stanford | 116 | 100 | +3.8 | 59.8% | 39.0% | 1.5 | $750,000 | A | ❓ Verify |
+| 6 | **Tamar Bates** | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 1.8 | $700,000 | A | ❓ Verify |
 | 7 | **Javian McCollum** | G | South Carolina | 114 | 101 | +3.2 | 58.2% | 35.0% | 2.2 | $650,000 | B+ | ❓ Verify |
-| 8 | **Tamar Bates** | SG | Indiana | 114 | 99 | +3.6 | 58.8% | 36.2% | 1.8 | $700,000 | A | ❓ Verify |
-| — | ~~CJ Fredrick~~ | — | ~~Iowa~~ | — | — | — | — | — | — | — | — | ❓ Eligibility status unconfirmed — verify |
-| — | ~~Devin Carter~~ | — | ~~Providence~~ | — | — | — | — | — | — | — | — | ❌ NBA (Kings, 2024) |
-| — | ~~Johnell Davis~~ | — | ~~Arkansas~~ | — | — | — | — | — | — | — | — | ❌ G League |
-| — | ~~Tre Johnson~~ | — | ~~Texas~~ | — | — | — | — | — | — | — | — | ❌ NBA (Wizards) |
-| — | ~~RJ Davis~~ | — | ~~UNC~~ | — | — | — | — | — | — | — | — | ❌ G League |
-| — | ~~Chucky Hepburn~~ | — | ~~Louisville~~ | — | — | — | — | — | — | — | — | ❌ NBA 2-way (Raptors) |
-| — | ~~Jeremiah Fears~~ | — | ~~Oklahoma~~ | — | — | — | — | — | — | — | — | ❌ NBA (Pelicans, #7 pick) |
-| — | ~~Caleb Love~~ | — | ~~Arizona~~ | — | — | — | — | — | — | — | — | ❌ NBA 2-way (Blazers) |
 
 ---
 
